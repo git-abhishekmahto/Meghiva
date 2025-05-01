@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            border: 2px solid red;
+            position: fixed;
+            bottom: 0;
+            left: 100px;
+
+        }
+        .line {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            width: 5px;
+            height: 1000px;
+            background-color: red;
+            margin-bottom: 60px;
+        }
+        .i{
+            width: 100%;
+            height: 500px;
+        }
+        iframe::-webkit-scrollbar{
+            display: none;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    <div class="line"></div>
+
+    <div class="i">
+        <iframe src="https://app-eight-eta-40.vercel.app/request-leave.html" frameborder="0"></iframe>
+    </div>
+    
+    <script>
+        let box = document.querySelector(".box");
+
+        let drag = false ; 
+        let offx = 0;
+        let offy = 0;
+        box.addEventListener("touchstart" , (e) => {
+            drag = true;
+            box.style.cursor = 'grabbing';  
+
+            let boxrect = box.getBoundingClientRect();
+
+            offx = e.touches[0].clientX - boxrect.left;
+            offy = e.touches[0].clientY - boxrect.top;
+
+
+            
+        })
+        document.addEventListener("touchmove" , (e) => {
+            if (drag){
+
+                let x = e.touches[0].clientX - offx;
+                let y = e.touches[0].clientY - offy;
+                box.style.left = x + 'px';
+                box.style.top = y + 'px';
+                // console.log(e.);
+                
+                console.log(offx);
+                
+            }
+        })
+        document.addEventListener("touchend" , (e) => {
+            drag = false;
+            box.style.cursor = 'unset';
+
+        })
+    </script>
+</body>
+</html>

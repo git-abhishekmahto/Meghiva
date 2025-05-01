@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container all-stay-container search-page-container slide-top">
+        <header class="all-stay-header booking-history-title payment-title">
+            <section class="search-section all-stay-search-section">
+                <div class="col">
+                    <input type="text" class="all-stay-search-input" id="searchBar">
+                    <svg class="search-icon all-stay-search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
+                            stroke="#363939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M17.5 17.5L13.875 13.875" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <div class="all-stay-search-right-title" id="showing-filter-modal">
+                        <div class="search-page-filter">
+                            <div class="search-page-filter-svg">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1720_209)">
+                                        <path d="M2.66669 14.0002V9.3335" stroke="#363939" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M2.66669 6.66667V2" stroke="#363939" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8 14V8" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8 5.33333V2" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M13.3333 13.9998V10.6665" stroke="#363939" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.3333 8V2" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M0.666687 9.3335H4.66669" stroke="#363939" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6 5.3335H10" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M11.3333 10.6665H15.3333" stroke="#363939" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1720_209">
+                                            <rect width="16" height="16" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h2>Filters</h2>
+                        </div>
+                    </div>
+                    <div class="all-stay-search-right-title temp-hide" id="search-close-svg">
+                        <div class="search-page-filter">
+                            <div class="search-page-filter-svg">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_8224)">
+                                        <path
+                                            d="M10.0001 18.3333C14.6025 18.3333 18.3334 14.6024 18.3334 10C18.3334 5.39763 14.6025 1.66667 10.0001 1.66667C5.39771 1.66667 1.66675 5.39763 1.66675 10C1.66675 14.6024 5.39771 18.3333 10.0001 18.3333Z"
+                                            fill="#363939" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M12.5 7.5L7.5 12.5" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M7.5 7.5L12.5 12.5" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_8224">
+                                            <rect width="20" height="20" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="typed-placeholder all-stay-typed-placeholder" id="typed-placeholder"></div>
+                </div>
+            </section>
+        </header>
+
+        <div class="search-page-content">
+            <div class="search-page-col">
+                <div class="search-page-col-left">
+                    <div class="search-page-col-svg">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.5001 1.5L11.0834 16.5C11.0468 16.5798 10.9881 16.6474 10.9143 16.6948C10.8404 16.7422 10.7545 16.7674 10.6667 16.7674C10.579 16.7674 10.493 16.7422 10.4192 16.6948C10.3453 16.6474 10.2866 16.5798 10.2501 16.5L7.33339 10.6667L1.50006 7.75C1.42027 7.71344 1.35266 7.65474 1.30526 7.58088C1.25786 7.50701 1.23267 7.4211 1.23267 7.33333C1.23267 7.24557 1.25786 7.15965 1.30526 7.08579C1.35266 7.01193 1.42027 6.95323 1.50006 6.91667L16.5001 1.5Z"
+                                fill="#363939" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h2>Search nearby Hostels, PGs and Flats</h2>
+                </div>
+                <div class="search-page-col-right">
+                    <div class="search-page-col-right-svg">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="search-page-col">
+                <div class="search-page-col-left">
+                    <div class="search-page-col-svg">
+                        <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.17327 8.32669C4.65774 8.81116 5.31482 9.08333 5.99996 9.08333C6.33921 9.08333 6.67513 9.01651 6.98856 8.88669C7.30198 8.75686 7.58677 8.56657 7.82665 8.32669C8.06654 8.08681 8.25682 7.80202 8.38665 7.4886C8.51647 7.17517 8.58329 6.83925 8.58329 6.5C8.58329 5.81486 8.31112 5.15777 7.82665 4.67331C7.34218 4.18884 6.6851 3.91666 5.99996 3.91666C5.31482 3.91666 4.65774 4.18884 4.17327 4.67331C3.6888 5.15777 3.41663 5.81486 3.41663 6.5C3.41663 7.18514 3.6888 7.84222 4.17327 8.32669ZM5.99996 16.5712C5.8577 16.4038 5.68007 16.1913 5.47673 15.9408C4.9363 15.2749 4.21654 14.343 3.49777 13.2776C2.77805 12.2109 2.06549 11.0195 1.53439 9.83399C1.00035 8.64193 0.666626 7.49258 0.666626 6.5C0.666626 5.08551 1.22853 3.72896 2.22872 2.72876C3.22892 1.72857 4.58547 1.16666 5.99996 1.16666C7.41445 1.16666 8.771 1.72857 9.77119 2.72876C10.7714 3.72896 11.3333 5.08551 11.3333 6.5C11.3333 7.49258 10.9996 8.64193 10.4655 9.83399C9.93443 11.0195 9.22187 12.2109 8.50214 13.2776C7.78338 14.343 7.06362 15.2749 6.52319 15.9408C6.31985 16.1913 6.14221 16.4038 5.99996 16.5712Z"
+                                fill="#363939" stroke="#363939" />
+                        </svg>
+                    </div>
+                    <h2>All of Ranchi</h2>
+                </div>
+                <div class="search-page-col-right">
+                    <div class="search-page-col-right-svg">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="freq-searched-title">
+                <h2>FREQUENTLY SEARCHED IN RANCHI</h2>
+            </div>
+            <div class="search-page-col">
+                <div class="search-page-col-left">
+                    <div class="search-page-col-svg">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.22914 3.63333C8.71469 3.63333 9.10831 3.23972 9.10831 2.75417C9.10831 2.26862 8.71469 1.875 8.22914 1.875C7.74359 1.875 7.34998 2.26862 7.34998 2.75417C7.34998 3.23972 7.74359 3.63333 8.22914 3.63333Z"
+                                fill="#363939" stroke="#363939" stroke-width="0.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M11.7709 3.63333C12.2564 3.63333 12.6501 3.23972 12.6501 2.75417C12.6501 2.26862 12.2564 1.875 11.7709 1.875C11.2853 1.875 10.8917 2.26862 10.8917 2.75417C10.8917 3.23972 11.2853 3.63333 11.7709 3.63333Z"
+                                stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M6.94997 14.1833C7.43552 14.1833 7.82913 13.7897 7.82913 13.3042C7.82913 12.8186 7.43552 12.425 6.94997 12.425C6.46442 12.425 6.0708 12.8186 6.0708 13.3042C6.0708 13.7897 6.46442 14.1833 6.94997 14.1833Z"
+                                stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M13.0499 14.1833C13.5355 14.1833 13.9291 13.7897 13.9291 13.3042C13.9291 12.8186 13.5355 12.425 13.0499 12.425C12.5644 12.425 12.1708 12.8186 12.1708 13.3042C12.1708 13.7897 12.5644 14.1833 13.0499 14.1833Z"
+                                stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M7.34996 2.75417H6.51663C6.00974 2.75527 5.52392 2.95711 5.1655 3.31554C4.80708 3.67396 4.60523 4.15978 4.60413 4.66667V14.25C4.60523 14.7569 4.80708 15.2427 5.1655 15.6011C5.52392 15.9596 6.00974 16.1614 6.51663 16.1625H13.475C13.9818 16.1614 14.4677 15.9596 14.8261 15.6011C15.1845 15.2427 15.3864 14.7569 15.3875 14.25V4.66667C15.3864 4.15978 15.1845 3.67396 14.8261 3.31554C14.4677 2.95711 13.9818 2.75527 13.475 2.75417H12.6416"
+                                stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M13.2292 5.94167H6.76665C6.34553 5.94167 6.00415 6.28305 6.00415 6.70417V9.31667C6.00415 9.73778 6.34553 10.0792 6.76665 10.0792H13.2292C13.6503 10.0792 13.9917 9.73778 13.9917 9.31667V6.70417C13.9917 6.28305 13.6503 5.94167 13.2292 5.94167Z"
+                                stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M12.3375 5.94167V5.06667C12.3364 4.96534 12.2957 4.86846 12.2241 4.79681C12.1524 4.72515 12.0555 4.68442 11.9542 4.68333H8.04587C7.94454 4.68442 7.84766 4.72515 7.77601 4.79681C7.70435 4.86846 7.66362 4.96534 7.66253 5.06667V5.94167M6.52087 16.1417L3.8667 18.125M13.4792 16.1417L16.1334 18.125M9.10837 2.75417H10.8917"
+                                stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+
+                    </div>
+                    <h2>Ranchi Railway Station</h2>
+                </div>
+                <div class="search-page-col-right">
+                    <div class="search-page-col-right-svg">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-page-content gap-3">
+            <div class="search-page-col">
+                <div class="search-page-col-left">
+                    <div class="search-page-col-svg">
+                        <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.17327 8.3267C4.65774 8.81117 5.31482 9.08334 5.99996 9.08334C6.33921 9.08334 6.67513 9.01652 6.98856 8.88669C7.30198 8.75687 7.58677 8.56658 7.82665 8.3267C8.06654 8.08681 8.25682 7.80203 8.38665 7.4886C8.51647 7.17518 8.58329 6.83925 8.58329 6.50001C8.58329 5.81486 8.31112 5.15778 7.82665 4.67331C7.34218 4.18884 6.6851 3.91667 5.99996 3.91667C5.31482 3.91667 4.65774 4.18884 4.17327 4.67331C3.6888 5.15778 3.41663 5.81486 3.41663 6.50001C3.41663 7.18515 3.6888 7.84223 4.17327 8.3267ZM5.99996 16.5712C5.8577 16.4038 5.68007 16.1913 5.47673 15.9408C4.9363 15.2749 4.21654 14.343 3.49777 13.2776C2.77805 12.2109 2.06549 11.0195 1.53439 9.83399C1.00035 8.64194 0.666626 7.49259 0.666626 6.50001C0.666626 5.08552 1.22853 3.72896 2.22872 2.72877C3.22892 1.72857 4.58547 1.16667 5.99996 1.16667C7.41445 1.16667 8.771 1.72857 9.77119 2.72877C10.7714 3.72896 11.3333 5.08552 11.3333 6.50001C11.3333 7.49259 10.9996 8.64194 10.4655 9.83399C9.93443 11.0195 9.22187 12.2109 8.50214 13.2776C7.78338 14.343 7.06362 15.2749 6.52319 15.9408C6.31985 16.1913 6.14221 16.4038 5.99996 16.5712Z"
+                                fill="#363939" stroke="#363939" />
+                        </svg>
+
+                    </div>
+                    <h2>Lalpur</h2>
+                </div>
+                <div class="search-page-col-right">
+                    <div class="search-page-col-right-svg">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="search-page-content gap-3">
+            <div class="search-page-col">
+                <div class="search-page-col-left">
+                    <div class="search-page-col-svg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.31251 12.77V5.17001H9.41001C9.98779 5.17001 10.5419 5.39953 10.9504 5.80808C11.359 6.21663 11.5885 6.77074 11.5885 7.34851C11.5885 7.92629 11.359 8.4804 10.9504 8.88895C10.5419 9.29749 9.98779 9.52701 9.41001 9.52701H7.31201M11.3785 12.306L12.992 18.761L14.6055 12.306L16.2195 18.761L17.833 12.306"
+                                stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M1.43994 9.35301C1.87409 7.73336 2.67497 6.23527 3.78065 4.97462C4.88633 3.71397 6.26717 2.72454 7.81636 2.08286C9.36556 1.44118 11.0416 1.16444 12.7148 1.27406C14.3881 1.38367 16.0137 1.8767 17.4659 2.71501M6.53344 21.285C7.98572 22.1235 9.61142 22.6167 11.2848 22.7264C12.9582 22.8361 14.6343 22.5595 16.1837 21.9178C17.733 21.2761 19.1139 20.2866 20.2197 19.0258C21.3254 17.765 22.1263 16.2668 22.5604 14.647"
+                                stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h2>PW Ranchi</h2>
+                </div>
+                <div class="search-page-col-right">
+                    <div class="search-page-col-right-svg">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-page-content gap-3">
+            <div class="search-page-col">
+                <div class="search-page-col-left">
+                    <div class="search-page-col-svg">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 14V0H1V14H0ZM6.5 14V10.923H7.5V14H6.5ZM13 14V0H14V14H13ZM6.5 8.538V5.462H7.5V8.539L6.5 8.538ZM6.5 3.077V0H7.5V3.077H6.5Z"
+                                fill="black" />
+                        </svg>
+
+
+                    </div>
+                    <h2>Main Road</h2>
+                </div>
+                <div class="search-page-col-right">
+                    <div class="search-page-col-right-svg">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-page-content gap-3">
+            <div class="search-page-col">
+                <div class="search-page-col-left">
+                    <div class="search-page-col-svg">
+                        <svg width="24" height="6" viewBox="0 0 24 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.3975 0.0466919L1.88531 2.6775C2.46569 2.49767 3.0837 2.47695 3.67481 2.6175L4.18837 2.7375L3.70669 4.78575L3.19519 4.66388C2.80144 4.57013 2.38744 4.66388 2.07262 4.91513C1.91639 5.03972 1.79021 5.19788 1.70344 5.37788L1.22925 5.14725C1.35062 4.89548 1.52749 4.6745 1.74656 4.50094C1.96462 4.32798 2.21898 4.2066 2.4906 4.14588C2.76222 4.08516 3.04405 4.08667 3.315 4.15032L3.555 3.13107C3.13079 3.03034 2.68924 3.02726 2.26366 3.12203C1.83808 3.21681 1.43957 3.40697 1.09819 3.67819C0.755722 3.95033 0.479103 4.29625 0.288955 4.69019C0.0988062 5.08412 3.32521e-05 5.51589 0 5.95332H6.79688L3.3975 0.0466919ZM7.38337 5.88788V1.87744H9.072C9.34744 1.87744 9.58537 1.92432 9.78206 2.01619C9.97894 2.11182 10.1271 2.24494 10.2321 2.421C10.3369 2.59538 10.3875 2.80332 10.3875 3.05063C10.3875 3.22875 10.3387 3.39544 10.2413 3.5565C10.1456 3.71588 9.98625 3.84713 9.76538 3.95588V3.54713C9.97706 3.62963 10.14 3.72713 10.2525 3.84338C10.3669 3.95775 10.4475 4.08319 10.4906 4.21988C10.5338 4.35488 10.5544 4.49738 10.5544 4.63988C10.5544 5.03513 10.4231 5.34244 10.1606 5.55994C9.90206 5.77913 9.5385 5.88788 9.072 5.88788H7.38337ZM8.2155 5.16075H9.16931C9.33806 5.16075 9.47119 5.11388 9.57056 5.0145C9.67163 4.91888 9.72038 4.79325 9.72038 4.63969C9.72038 4.48219 9.67163 4.35488 9.57038 4.25738C9.471 4.15988 9.33788 4.11113 9.16931 4.113H8.2155V5.16075ZM8.2155 3.38607H9.13181C9.26119 3.38607 9.36244 3.34857 9.43744 3.27732C9.51619 3.20232 9.55556 3.10294 9.55556 2.98125C9.55556 2.86125 9.51619 2.76188 9.43744 2.6925C9.36244 2.61582 9.26119 2.57832 9.13181 2.57832H8.2155V3.38607ZM11.1334 5.88788V2.94938H11.9353V5.88788H11.1334ZM11.1334 2.68707V1.87744H11.9353V2.68707H11.1334ZM14.0229 5.95332C13.7323 5.95332 13.4683 5.88582 13.2283 5.75475C12.9955 5.62466 12.8 5.4369 12.6606 5.2095C12.5199 4.97888 12.4506 4.71282 12.4506 4.4205C12.4506 4.1205 12.5199 3.85819 12.6606 3.62775C12.8006 3.40088 12.996 3.21327 13.2283 3.0825C13.4683 2.95125 13.7325 2.88375 14.0229 2.88375C14.3134 2.88375 14.5757 2.95125 14.8101 3.0825C15.0436 3.21096 15.2389 3.39912 15.3759 3.62775C15.5184 3.85838 15.5897 4.12069 15.5897 4.4205C15.5897 4.71282 15.5184 4.97888 15.3759 5.2095C15.2389 5.43814 15.0436 5.6263 14.8101 5.75475C14.5757 5.886 14.3115 5.95332 14.0229 5.95332ZM14.0229 5.22638C14.1711 5.22638 14.2986 5.19263 14.4034 5.12325C14.514 5.05575 14.6002 4.96013 14.6621 4.83825C14.7276 4.71657 14.7576 4.57782 14.7576 4.4205C14.7576 4.26113 14.7276 4.12238 14.6619 4.00444C14.604 3.88719 14.5145 3.78847 14.4034 3.71944C14.2984 3.6465 14.1709 3.61275 14.0229 3.61275C13.8748 3.61275 13.7473 3.6465 13.6369 3.71963C13.5244 3.789 13.4344 3.88838 13.3746 4.00463C13.3127 4.12257 13.2827 4.26113 13.2827 4.4205C13.2827 4.578 13.3127 4.71657 13.3746 4.83844C13.4346 4.95657 13.5246 5.05575 13.6371 5.12325C13.7475 5.19263 13.8769 5.22638 14.0229 5.22638ZM16.1031 5.88788V2.94938H16.8546V3.66525L16.7758 3.54713C16.8171 3.32044 16.9202 3.15375 17.0871 3.045C17.25 2.93625 17.4448 2.88375 17.6752 2.88375C17.919 2.88375 18.1327 2.9475 18.3126 3.07313C18.4999 3.195 18.6161 3.35982 18.663 3.56963L18.4324 3.59025C18.528 3.34857 18.6667 3.17063 18.8466 3.05813C19.0247 2.94188 19.2326 2.88375 19.4724 2.88375C19.6824 2.88375 19.8699 2.93063 20.031 3.02438C20.194 3.1168 20.3277 3.25318 20.4169 3.41794C20.5106 3.58294 20.5556 3.77776 20.5556 3.99882V5.88788H19.7516V4.17132C19.7516 4.05694 19.7291 3.95757 19.686 3.87507C19.65 3.79453 19.5906 3.72666 19.5156 3.68025C19.4387 3.63525 19.3487 3.61275 19.2418 3.61275C19.1389 3.61275 19.047 3.63525 18.9703 3.68025C18.8934 3.72713 18.8297 3.79463 18.7903 3.87525C18.7509 3.95775 18.7322 4.05694 18.7322 4.17132V5.88788H17.9265V4.17132C17.9265 4.05694 17.9059 3.95757 17.8646 3.87507C17.8271 3.79444 17.7671 3.72694 17.6921 3.68025C17.6171 3.63525 17.5252 3.61275 17.4186 3.61275C17.3136 3.61275 17.2236 3.63525 17.145 3.68025C17.0681 3.72713 17.0063 3.79463 16.9688 3.87525C16.9294 3.95775 16.9088 4.05694 16.9088 4.17132V5.88788H16.1031ZM22.6039 5.9535C22.2947 5.9535 22.0249 5.886 21.7943 5.74913C21.5702 5.61363 21.387 5.42004 21.264 5.18888C21.1402 4.95638 21.0765 4.69782 21.0765 4.41488C21.0765 4.11863 21.1403 3.85819 21.2696 3.62775C21.3971 3.40324 21.5804 3.21543 21.8018 3.0825C22.023 2.95125 22.2722 2.88375 22.5514 2.88375C22.7839 2.88375 22.99 2.92125 23.1698 2.99625C23.3479 3.06938 23.4979 3.17063 23.6198 3.30563C23.7452 3.43812 23.8421 3.595 23.9044 3.7665C23.9681 3.94088 24 4.12632 24 4.33238C24 4.3905 23.9963 4.44675 23.9888 4.50488C23.9869 4.55175 23.9794 4.59863 23.9625 4.64363H21.7699V4.05113H23.5071L23.1268 4.33238C23.1606 4.17863 23.1606 4.04194 23.1193 3.92382C23.0799 3.80194 23.0124 3.70632 22.9112 3.639C22.8156 3.56588 22.6956 3.53213 22.5514 3.53213C22.4126 3.53213 22.2928 3.564 22.1916 3.63338C22.0922 3.70088 22.0172 3.80213 21.9684 3.93525C21.9161 4.06819 21.8974 4.22925 21.9086 4.4205C21.8936 4.5855 21.9124 4.72782 21.9686 4.85532C22.0174 4.97719 22.1036 5.07825 22.2142 5.15138C22.3228 5.22075 22.4595 5.25263 22.617 5.25263C22.7576 5.25263 22.8795 5.2245 22.9806 5.16638C23.0818 5.112 23.1662 5.03138 23.2224 4.932L23.8669 5.23763C23.8088 5.38413 23.7147 5.51362 23.5933 5.61413C23.4652 5.72558 23.317 5.8115 23.1566 5.86725C22.9897 5.9235 22.8043 5.9535 22.6039 5.9535Z"
+                                fill="black" />
+                        </svg>
+
+
+                    </div>
+                    <h2>Biome Ranchi</h2>
+                </div>
+                <div class="search-page-col-right">
+                    <div class="search-page-col-right-svg">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-complaints-filter-modal-container" id="my-complaints-filter-modal-container">
+        <div class="my-complaints-filter-modal-content" id="filter-modal-content">
+            <div class="filter-modal-title-p">
+                <div class="wallets-dash-line-center hg-100" id="wallets-dash-line">
+                    <div class="wallets-dash-line-center-content"></div>
+                </div>
+                <div id="back-filter-modal" href="my-hostel.html"
+                            class="notification-title-svg payment-title-svg back-filter-svg">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 5.5L5 15.5" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5 5.5L15 15.5" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                <div class="booking-history-title payment-title my-complaints-filter-modal-title my-title"
+                    id="my-complaints-filter-modal-title">
+                    <div class="notification-title-content payment-title-content back-icon">
+                        <!-- <div id="back-filter-modal" href="my-hostel.html"
+                            class="notification-title-svg payment-title-svg">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 5.5L5 15.5" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5 5.5L15 15.5" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div> -->
+                        <h2>Filters</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="my-complaints-filter-modal-hero-content all-stays-filter-modal-hero-content">
+                <div class="all-stays-filter-modal-top-content">
+                    <div class="all-stays-filter-modal-top-content-text">
+                        <h2>Sort by</h2>
+                    </div>
+                    <div class="all-stays-filter-modal-filter">
+                        <div class="all-stays-filter-modal-filter-content active">
+                            <h2>Price: Low to High</h2>
+                        </div>
+                        <div class="all-stays-filter-modal-filter-content">
+                            <h2>Price: Low to High</h2>
+                        </div>
+                    </div>
+                    <div class="all-stays-filter-modal-filter">
+                        <div class="all-stays-filter-modal-filter-content">
+                            <h2>Boys Stay</h2>
+                        </div>
+                        <div class="all-stays-filter-modal-filter-content">
+                            <h2>Girls Stay</h2>
+                        </div>
+                        <div class="all-stays-filter-modal-filter-content">
+                            <h2>Co-ed Stay</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-stays-filter-modal-category">
+                    <div class="all-stays-filter-modal-top-content-text">
+                        <h2>Category</h2>
+                    </div>
+                    <label class="all-stays-filter-modal-category-content">
+                        <div class="filter-modal-cat-text">
+                            <h2>Focused</h2>
+                        </div>
+                        <div class="filter-checkbox">
+                            <input type="checkbox" class="custom-checkbox" checked>
+                        </div>
+                    </label>
+                    <label class="all-stays-filter-modal-category-content">
+                        <div class="filter-modal-cat-text">
+                            <h2>Balanced</h2>
+                        </div>
+                        <div class="filter-checkbox">
+                            <input type="checkbox" class="custom-checkbox">
+                        </div>
+                    </label>
+                    <label class="all-stays-filter-modal-category-content">
+                        <div class="filter-modal-cat-text">
+                            <h2>Chill</h2>
+                        </div>
+                        <div class="filter-checkbox">
+                            <input type="checkbox" class="custom-checkbox">
+                        </div>
+                    </label>
+                </div>
+                <div class="all-stays-filter-modal-price">
+                    <div class="all-stays-filter-modal-top-content-text">
+                        <h2>Price</h2>
+                    </div>
+                    <div class="all-stays-filter-modal-price-top">
+                        <h2><span id="print-price-min-val"> ₹6,000 </span> - <span id="print-price-max-val">
+                                ₹14,000</span> </h2>
+                        <h3>The best stays are ranged from ₹5000 and above.</h3>
+                    </div>
+                    <div class="price-filter-tooltip-container">
+                        <div class="price-filter-slider-track">
+                            <div class="price-filter-tooltip-box" id="tooltip-min">
+                                <div class="price-filter-tooltip-box-price-val" id="min-val">
+                                    ₹6000
+                                </div>
+                            </div>
+                            <div class="price-filter-tooltip-box" id="tooltip-max">
+                                <div class="price-filter-tooltip-box-price-val" id="max-val">
+                                    ₹16000
+                                </div>
+                            </div>
+                            <div class="price-filter-tooltip-slider-input">
+                                <input type="range" min="1000" max="25000" value="4000" step="100"
+                                    class="price-filter-range-input" id="min-price-input">
+                                <input type="range" min="1000" max="25000" value="14000" step="100"
+                                    class="price-filter-range-input" id="max-price-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="filter-modal-footer">
+            <div class="filter-modal-back-btn" id="filter-back-modal">
+                <button>Back</button>
+            </div>
+            <a href="all-stays.html" class="filter-modal-footer-show-result-btn">
+                <button>
+                    Show results
+                </button>
+            </a>
+        </div>
+        <div class="close-filter-price-modal" id="closeFilterPriceModal"></div>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed('#typed-placeholder', {
+            strings: [
+                "Search for hostels...",
+                "Search for flats...",
+                "Search for PGs...",
+            ],
+            typeSpeed: 80,     // Speed of typing
+            backSpeed: 50,     // Speed of deleting
+            backDelay: 1000,   // Delay before starting deletion
+            startDelay: 500,   // Initial delay
+            loop: true,        // Infinite loop
+            showCursor: false  // Hide typing cursor
+        });
+
+        var input = document.getElementById("searchBar");
+        input.focus();
+        var typedplace = document.getElementById("typed-placeholder");
+
+        let searchCloseSvg = document.getElementById("search-close-svg");
+        let searchFilter = document.getElementById("showing-filter-modal");
+
+        input.addEventListener("input", () => {
+            searchInput();
+            typedPlace();
+        });
+
+        function typedPlace() {
+            if (input.value.length === 0) {
+                typedplace.style.display = "block";
+            } else {
+                typedplace.style.display = "none";
+            }
+        }
+
+        function searchInput() {
+            if (input.value.length > 0) {
+                searchCloseSvg.classList.remove("temp-hide");
+                searchFilter.classList.add("temp-hide");
+            } else {
+                searchFilter.classList.remove("temp-hide");
+                searchCloseSvg.classList.add("temp-hide");
+            }
+        }
+
+
+        searchCloseSvg.addEventListener("click", () => {
+            searchBar.value = '';
+            searchInput();
+            typedPlace();
+        })
+
+
+    </script>
+</body>
+
+</html>

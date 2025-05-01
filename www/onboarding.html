@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="onboarding-top-content">
+            <div class="m-logo">
+                <img src="assets/images/m-logo.png" alt="m-logo">
+            </div>
+            <div class="onboarding-skip-btn" id="onboarding-skip-btn">
+                <h2>Skip</h2>
+                <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 0H5C2.23858 0 0 2.23858 0 5V13C0 15.7614 2.23858 18 5 18H11C13.7614 18 16 15.7614 16 13V5C16 2.23858 13.7614 0 11 0Z" fill="#3C6F75"/>
+                    <path d="M8 2C9.10457 2 10 2.89543 10 4V9C10 10.1046 9.10457 11 8 11C6.89543 11 6 10.1046 6 9V4C6 2.89543 6.89543 2 8 2Z" fill="white"/>
+                    </svg>
+            </div>
+        </div>
+        <div class="onboarding-main-container">
+            <div class="onboarding-slide-content">
+                <div class="onboarding-slide-top-content-svg">
+                    <img src="assets/svg/on.svg" alt="on-svg">
+                </div>
+                <div class="onboarding-slide-main-text">
+                    <h1>Find your ideal hostel and PG easily.</h1>
+                </div>
+                <div class="onboarding-slide-text mt-2">
+                    <h2>Search, compare and book the best verified hostels & PGs near you.</h2>
+                </div>
+            </div>
+            <div class="onboarding-slide-content">
+                <div class="onboarding-slide-top-content-svg">
+                    <img src="assets/svg/on1.svg" alt="on-svg">
+                </div>
+                <div class="onboarding-slide-main-text">
+                    <h1>Smart dashboard for easy hostel life.</h1>
+                </div>
+                <div class="onboarding-slide-text mt-2">
+                    <h2>Manage attendance, payments, leave, complaints & more — all in one place.</h2>
+                </div>
+            </div>
+            <div class="onboarding-slide-content">
+                <div class="onboarding-slide-top-content-svg">
+                    <img src="assets/svg/on2.svg" alt="on-svg">
+                </div>
+                <div class="onboarding-slide-main-text">
+                    <h1>Find your ideal hostel and PG easily.</h1>
+                </div>
+                <div class="onboarding-slide-text mt-2">
+                    <h2>Search, compare and book the best verified hostels & PGs near you.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="onboarding-footer-content">
+            <div class="onboarding-footer-btn">
+                <button id="onboard-next-btn">Next 
+                    
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        // let nextBtn = document.getElementById("onboard-next-btn");
+        // let slideContainer = document.querySelector(".onboarding-main-container");
+
+        // let skipBtn = document.getElementById("onboarding-skip-btn");
+
+        // let index = 0;
+
+        // let contentWidth = slideContainer.clientWidth;
+
+        // let btnText = skipBtn.querySelector("h2");;
+
+
+        // nextBtn.addEventListener("click", () => {
+        //     index++;
+        //     if (index >= slideContainer.children.length - 1) {
+        //         nextBtn.classList.add("active");
+        //         nextBtn.textContent = 'Sign me up!';
+        //         // navigateDirection('Exit');
+        //         btnText.textContent = 'Exit';
+        //     }
+        //     if (index === 3) {
+        //         location.href = 'signup.html';
+        //     }
+        
+        //     slideContainer.scrollTo({
+        //         left: contentWidth * index,
+        //         behavior: "smooth"
+        //     });
+        // });
+
+       
+       
+        // function navigateDirection (text){
+        //     if (text === 'Skip'){
+        //         skipBtn.addEventListener("click" , () => {
+        //             alert(1);
+        //         });
+        //     } else if (text === 'Exit'){
+        //         skipBtn.addEventListener("click" , () => {
+        //             alert('2');
+        //         });
+        //     }   
+        // }
+        
+
+
+        let nextBtn = document.getElementById("onboard-next-btn");
+let slideContainer = document.querySelector(".onboarding-main-container");
+let skipBtn = document.getElementById("onboarding-skip-btn");
+let index = 0;
+let contentWidth = slideContainer.clientWidth;
+let btnText = skipBtn.querySelector("h2");
+let isScrolling = false;
+
+nextBtn.addEventListener("click", () => {
+  index++;
+  updateNavigation();
+  slideContainer.scrollTo({
+    left: contentWidth * index,
+    behavior: "smooth",
+    
+  });
+});
+
+slideContainer.addEventListener('scroll', () => {
+  isScrolling = true; 
+});
+
+slideContainer.addEventListener('scrollend', () => {
+  if (!isScrolling) return;
+  isScrolling = false; 
+
+  const scrollLeft = slideContainer.scrollLeft;
+  const itemWidth = contentWidth; 
+  const newIndex = Math.round(scrollLeft / itemWidth);
+
+  if (newIndex !== index) {
+    index = newIndex;
+    updateNavigation();
+    console.log('Current Index after slide:', index);
+  }
+});
+
+function updateNavigation() {
+  if (index >= slideContainer.children.length - 1) {
+    nextBtn.classList.add("active");
+    nextBtn.textContent = 'Sign me up!';
+    btnText.textContent = 'Exit';
+  } else {
+    nextBtn.classList.remove("active");
+    nextBtn.textContent = 'Next';
+    btnText.textContent = 'Skip';
+  }
+
+  if (index === 3) {
+    location.href = 'signup.html';
+  }
+}
+
+
+updateNavigation();
+
+skipBtn.addEventListener("click", () => {
+            if (btnText.textContent === 'Exit') {
+                location.href = 'index.html';
+            } else {
+                location.href = 'signup.html';
+            }
+        });
+
+    </script>
+</body>
+
+</html>

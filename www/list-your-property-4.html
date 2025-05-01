@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container notification-container hostel-rules-container">
+        <div class="booking-history-title payment-title ">
+            <div class="notification-title-content payment-title-content back-icon ">
+                <a href="list-your-property-3.html" class="notification-title-svg payment-title-svg">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.8333 10H4.16663" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M9.99996 15.8334L4.16663 10.0001L9.99996 4.16675" stroke="#363939" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <div class="logo logo-1">
+                    <img src="assets/images/meghani-removebg-preview.png" alt="logo.png">
+                </div>
+            </div>
+        </div>
+        <div class="list-your-property-top-content">
+            <!-- <div class="list-your-property-progress-text">
+                <h3><span>6</span> of 6 steps completed</h3>
+            </div> -->
+            <div class="list-your-property-progress-box-content">
+                <div class="list-your-property-progress-box fill-box"></div>
+                <div class="list-your-property-progress-box fill-box"></div>
+                <div class="list-your-property-progress-box fill-box"></div>
+                <div class="list-your-property-progress-box fill-box"></div>
+                <div class="list-your-property-progress-box fill-box"></div>
+                <div class="list-your-property-progress-box"></div>
+            </div>
+            <div class="list-your-property-top-text">
+                <h2>Facility Details:</h2>
+            </div>
+        </div>
+        <div class="list-your-property-alert-msg" id="alert-msg">
+            <div class="alert-svg">
+                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.1599 9.68206L8.68573 2.26206C8.50481 1.97904 8.25555 1.74612 7.96093 1.58478C7.6663 1.42344 7.3358 1.33887 6.9999 1.33887C6.66399 1.33887 6.33349 1.42344 6.03886 1.58478C5.74424 1.74612 5.49498 1.97904 5.31406 2.26206L0.839896 9.68206C0.681844 9.94553 0.595939 10.246 0.590819 10.5532C0.585699 10.8604 0.661544 11.1635 0.810729 11.4321C0.983209 11.7344 1.23286 11.9855 1.53418 12.1597C1.8355 12.334 2.17767 12.4251 2.52573 12.4237H11.4741C11.8198 12.4274 12.1605 12.3398 12.4616 12.1698C12.7627 11.9998 13.0136 11.7534 13.1891 11.4554C13.3426 11.184 13.4209 10.8765 13.4158 10.5648C13.4106 10.253 13.3223 9.94825 13.1599 9.68206ZM6.9999 10.0904C6.88452 10.0904 6.77174 10.0562 6.67581 9.99209C6.57988 9.92799 6.50512 9.83689 6.46097 9.7303C6.41681 9.62371 6.40526 9.50642 6.42777 9.39326C6.45028 9.28011 6.50584 9.17617 6.58742 9.09459C6.669 9.01301 6.77294 8.95745 6.88609 8.93494C6.99925 8.91243 7.11654 8.92398 7.22313 8.96813C7.32972 9.01229 7.42082 9.08705 7.48492 9.18298C7.54902 9.27891 7.58323 9.39169 7.58323 9.50706C7.58323 9.66177 7.52177 9.81015 7.41237 9.91954C7.30298 10.0289 7.1546 10.0904 6.9999 10.0904ZM7.58323 7.75706C7.58323 7.91177 7.52177 8.06015 7.41237 8.16954C7.30298 8.27894 7.1546 8.3404 6.9999 8.3404C6.84519 8.3404 6.69681 8.27894 6.58742 8.16954C6.47802 8.06015 6.41656 7.91177 6.41656 7.75706V5.42373C6.41656 5.26902 6.47802 5.12065 6.58742 5.01125C6.69681 4.90186 6.84519 4.8404 6.9999 4.8404C7.1546 4.8404 7.30298 4.90186 7.41237 5.01125C7.52177 5.12065 7.58323 5.26902 7.58323 5.42373V7.75706Z" fill="#D44848"/>
+                    </svg>                    
+            </div>
+            <h3>Please select one of the below reasons.</h3>
+        </div>
+    <form id="amenities-form">
+        <div class="list-your-property-facilities-container mt-2">
+            <div class="list-your-property-facilities-top-content">
+                <h2>Facilities</h2>
+            </div>
+            <div class="list-your-property-facilities-content">
+                <div class="key-deposit-content list-your-property-facilities-option">
+                    <label class="key-deposit-confirm facilities-checkbox">
+                        <!-- <div class="key-deposit-checkbox">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8333 2.16667V13.8333H2.16667V2.16667H13.8333ZM13.8333 0.5H2.16667C1.25 0.5 0.5 1.25 0.5 2.16667V13.8333C0.5 14.75 1.25 15.5 2.16667 15.5H13.8333C14.75 15.5 15.5 14.75 15.5 13.8333V2.16667C15.5 1.25 14.75 0.5 13.8333 0.5Z" fill="#C0C0C0"/>
+                                </svg>                                    
+                        </div> -->
+                        <input type="checkbox" class="custom-checkbox raise-complaints-checkbox-square" name="amenities[]" value="Food Included">
+                        <h2>Food Included</h2>
+                    </label>
+                </div>
+                <div class="key-deposit-content list-your-property-facilities-option">
+                    <label class="key-deposit-confirm facilities-checkbox">
+                        <!-- <div class="key-deposit-checkbox">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8333 2.16667V13.8333H2.16667V2.16667H13.8333ZM13.8333 0.5H2.16667C1.25 0.5 0.5 1.25 0.5 2.16667V13.8333C0.5 14.75 1.25 15.5 2.16667 15.5H13.8333C14.75 15.5 15.5 14.75 15.5 13.8333V2.16667C15.5 1.25 14.75 0.5 13.8333 0.5Z" fill="#C0C0C0"/>
+                                </svg>                                    
+                        </div> -->
+                        <input type="checkbox" class="custom-checkbox raise-complaints-checkbox-square" name="amenities[]" value="AC - Non AC rooms">
+                        <h2>AC - Non AC rooms</h2>
+                    </label>
+                </div>
+            </div>
+            <div class="list-your-property-facilities-content">
+                <div class="key-deposit-content list-your-property-facilities-option">
+                    <label class="key-deposit-confirm facilities-checkbox">
+                        <!-- <div class="key-deposit-checkbox">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8333 2.16667V13.8333H2.16667V2.16667H13.8333ZM13.8333 0.5H2.16667C1.25 0.5 0.5 1.25 0.5 2.16667V13.8333C0.5 14.75 1.25 15.5 2.16667 15.5H13.8333C14.75 15.5 15.5 14.75 15.5 13.8333V2.16667C15.5 1.25 14.75 0.5 13.8333 0.5Z" fill="#C0C0C0"/>
+                                </svg>                                    
+                        </div> -->
+                        <input type="checkbox" class="custom-checkbox raise-complaints-checkbox-square" name="amenities[]" value="Wi-fi">
+                        <h2>Wi-fi</h2>
+                    </label>
+                </div>
+                <div class="key-deposit-content list-your-property-facilities-option">
+                    <label class="key-deposit-confirm facilities-checkbox">
+                        <!-- <div class="key-deposit-checkbox">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8333 2.16667V13.8333H2.16667V2.16667H13.8333ZM13.8333 0.5H2.16667C1.25 0.5 0.5 1.25 0.5 2.16667V13.8333C0.5 14.75 1.25 15.5 2.16667 15.5H13.8333C14.75 15.5 15.5 14.75 15.5 13.8333V2.16667C15.5 1.25 14.75 0.5 13.8333 0.5Z" fill="#C0C0C0"/>
+                                </svg>                                    
+                        </div> -->
+                        <input type="checkbox" class="custom-checkbox raise-complaints-checkbox-square" name="amenities[]" value="TV">
+                        <h2>TV</h2>
+                    </label>
+                </div>
+            </div>
+            <div class="list-your-property-facilities-content">
+                <div class="key-deposit-content list-your-property-facilities-option">
+                    <label class="key-deposit-confirm facilities-checkbox">
+                        <!-- <div class="key-deposit-checkbox">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8333 2.16667V13.8333H2.16667V2.16667H13.8333ZM13.8333 0.5H2.16667C1.25 0.5 0.5 1.25 0.5 2.16667V13.8333C0.5 14.75 1.25 15.5 2.16667 15.5H13.8333C14.75 15.5 15.5 14.75 15.5 13.8333V2.16667C15.5 1.25 14.75 0.5 13.8333 0.5Z" fill="#C0C0C0"/>
+                                </svg>                                    
+                        </div> -->
+                        <input type="checkbox" class="custom-checkbox raise-complaints-checkbox-square" name="amenities[]" value="CCTV">
+                        <h2>CCTV</h2>
+                    </label>
+                </div>
+                <div class="key-deposit-content list-your-property-facilities-option">
+                    <label class="key-deposit-confirm facilities-checkbox">
+                        <!-- <div class="key-deposit-checkbox">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8333 2.16667V13.8333H2.16667V2.16667H13.8333ZM13.8333 0.5H2.16667C1.25 0.5 0.5 1.25 0.5 2.16667V13.8333C0.5 14.75 1.25 15.5 2.16667 15.5H13.8333C14.75 15.5 15.5 14.75 15.5 13.8333V2.16667C15.5 1.25 14.75 0.5 13.8333 0.5Z" fill="#C0C0C0"/>
+                                </svg>                                    
+                        </div> -->
+                        <input type="checkbox" class="custom-checkbox raise-complaints-checkbox-square" name="amenities[]" value="Refrigerator">
+                        <h2>Refrigerator</h2>
+                    </label>
+                </div>
+            </div>
+            <div class="list-your-property-facilities-content">
+                <div class="key-deposit-content list-your-property-facilities-option">
+                    <label class="key-deposit-confirm facilities-checkbox">
+                        <!-- <div class="key-deposit-checkbox">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8333 2.16667V13.8333H2.16667V2.16667H13.8333ZM13.8333 0.5H2.16667C1.25 0.5 0.5 1.25 0.5 2.16667V13.8333C0.5 14.75 1.25 15.5 2.16667 15.5H13.8333C14.75 15.5 15.5 14.75 15.5 13.8333V2.16667C15.5 1.25 14.75 0.5 13.8333 0.5Z" fill="#C0C0C0"/>
+                                </svg>                                    
+                        </div> -->
+                        <input type="checkbox" class="custom-checkbox raise-complaints-checkbox-square" name="amenities[]" value="Parents Stay">
+                        <h2>Parents Stay</h2>
+                    </label>
+                </div>
+                <div class="key-deposit-content list-your-property-facilities-option">
+                    <label class="key-deposit-confirm facilities-checkbox">
+                        <!-- <div class="key-deposit-checkbox">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8333 2.16667V13.8333H2.16667V2.16667H13.8333ZM13.8333 0.5H2.16667C1.25 0.5 0.5 1.25 0.5 2.16667V13.8333C0.5 14.75 1.25 15.5 2.16667 15.5H13.8333C14.75 15.5 15.5 14.75 15.5 13.8333V2.16667C15.5 1.25 14.75 0.5 13.8333 0.5Z" fill="#C0C0C0"/>
+                                </svg>                                    
+                        </div> -->
+                        <input type="checkbox" class="custom-checkbox raise-complaints-checkbox-square" name="amenities[]" value="Essential Furnitures">
+                        <h2>Essential Furnitures</h2>
+                    </label>
+                </div>
+            </div>
+            <div class="list-your-property-facilities-content">
+                <div class="key-deposit-content list-your-property-facilities-option">
+                    <label class="key-deposit-confirm facilities-checkbox">
+                        <!-- <div class="key-deposit-checkbox">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8333 2.16667V13.8333H2.16667V2.16667H13.8333ZM13.8333 0.5H2.16667C1.25 0.5 0.5 1.25 0.5 2.16667V13.8333C0.5 14.75 1.25 15.5 2.16667 15.5H13.8333C14.75 15.5 15.5 14.75 15.5 13.8333V2.16667C15.5 1.25 14.75 0.5 13.8333 0.5Z" fill="#C0C0C0"/>
+                                </svg>                                    
+                        </div> -->
+                        <input type="checkbox" class="custom-checkbox raise-complaints-checkbox-square" name="amenities[]" value="Parking">
+                        <h2>Parking</h2>
+                    </label>
+                </div>
+                <div class="key-deposit-content list-your-property-facilities-option">
+                    <label class="key-deposit-confirm facilities-checkbox">
+                        <!-- <div class="key-deposit-checkbox">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8333 2.16667V13.8333H2.16667V2.16667H13.8333ZM13.8333 0.5H2.16667C1.25 0.5 0.5 1.25 0.5 2.16667V13.8333C0.5 14.75 1.25 15.5 2.16667 15.5H13.8333C14.75 15.5 15.5 14.75 15.5 13.8333V2.16667C15.5 1.25 14.75 0.5 13.8333 0.5Z" fill="#C0C0C0"/>
+                                </svg>                                    
+                        </div> -->
+                        <input type="checkbox" class="custom-checkbox raise-complaints-checkbox-square" name="amenities[]" value="Washing Machine">
+                        <h2>Washing Machine</h2>
+                    </label>
+                </div>
+            </div>
+            <div class="list-your-property-facilities-content">
+                <div class="key-deposit-content list-your-property-facilities-option">
+                    <label class="key-deposit-confirm facilities-checkbox">
+                        <!-- <div class="key-deposit-checkbox">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8333 2.16667V13.8333H2.16667V2.16667H13.8333ZM13.8333 0.5H2.16667C1.25 0.5 0.5 1.25 0.5 2.16667V13.8333C0.5 14.75 1.25 15.5 2.16667 15.5H13.8333C14.75 15.5 15.5 14.75 15.5 13.8333V2.16667C15.5 1.25 14.75 0.5 13.8333 0.5Z" fill="#C0C0C0"/>
+                                </svg>                                    
+                        </div> -->
+                        <input type="checkbox" class="custom-checkbox raise-complaints-checkbox-square" name="amenities[]" value="Security Guard">
+                        <h2>Security Guard</h2>
+                    </label>
+                </div>
+                <div class="key-deposit-content list-your-property-facilities-option">
+                    <label class="key-deposit-confirm facilities-checkbox">
+                        <!-- <div class="key-deposit-checkbox">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8333 2.16667V13.8333H2.16667V2.16667H13.8333ZM13.8333 0.5H2.16667C1.25 0.5 0.5 1.25 0.5 2.16667V13.8333C0.5 14.75 1.25 15.5 2.16667 15.5H13.8333C14.75 15.5 15.5 14.75 15.5 13.8333V2.16667C15.5 1.25 14.75 0.5 13.8333 0.5Z" fill="#C0C0C0"/>
+                                </svg>                                    
+                        </div> -->
+                        <input type="checkbox" class="custom-checkbox raise-complaints-checkbox-square" name="amenities[]" value="Power Backup">
+                        <h2>Power Backup</h2>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </form>    
+
+        <div class="list-your-property-facilities-container mb-120 mt-2">
+            <div class="list-your-property-facilities-top-content">
+                <h2>Stay Environment</h2>
+            </div>
+            <div class="list-your-property-facilities-content">
+                <div class="key-deposit-content list-your-property-facilities-option">
+                    <label class="key-deposit-confirm facilities-checkbox">
+                        <!-- <div class="key-deposit-checkbox">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8333 2.16667V13.8333H2.16667V2.16667H13.8333ZM13.8333 0.5H2.16667C1.25 0.5 0.5 1.25 0.5 2.16667V13.8333C0.5 14.75 1.25 15.5 2.16667 15.5H13.8333C14.75 15.5 15.5 14.75 15.5 13.8333V2.16667C15.5 1.25 14.75 0.5 13.8333 0.5Z" fill="#C0C0C0"/>
+                                </svg>                                    
+                        </div> -->
+                        <input type="checkbox" class="custom-checkbox raise-complaints-checkbox-square">
+                        <h2>Chill</h2>
+                    </label>
+                </div>
+                <div class="list-your-property-info-circle-svg">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 19.424C15.1086 19.424 19.25 15.2826 19.25 10.174C19.25 5.06532 15.1086 0.92395 10 0.92395C4.89137 0.92395 0.75 5.06532 0.75 10.174C0.75 15.2826 4.89137 19.424 10 19.424Z" stroke="#D2D3D3" stroke-width="1.5"/>
+                        <path d="M10 9.98694V14.9869" stroke="#D2D3D3" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M10 7.86194C10.6904 7.86194 11.25 7.30229 11.25 6.61194C11.25 5.92158 10.6904 5.36194 10 5.36194C9.30964 5.36194 8.75 5.92158 8.75 6.61194C8.75 7.30229 9.30964 7.86194 10 7.86194Z" fill="#D2D3D3"/>
+                        </svg>
+                        
+                </div>
+            </div>
+            <div class="list-your-property-facilities-content">
+                <div class="key-deposit-content list-your-property-facilities-option">
+                    <label class="key-deposit-confirm facilities-checkbox">
+                        <!-- <div class="key-deposit-checkbox">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8333 2.16667V13.8333H2.16667V2.16667H13.8333ZM13.8333 0.5H2.16667C1.25 0.5 0.5 1.25 0.5 2.16667V13.8333C0.5 14.75 1.25 15.5 2.16667 15.5H13.8333C14.75 15.5 15.5 14.75 15.5 13.8333V2.16667C15.5 1.25 14.75 0.5 13.8333 0.5Z" fill="#C0C0C0"/>
+                                </svg>                                    
+                        </div> -->
+                        <input type="checkbox" class="custom-checkbox raise-complaints-checkbox-square">
+                        <h2>Balanced</h2>
+                    </label>
+                </div>
+                <div class="list-your-property-info-circle-svg">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 19.424C15.1086 19.424 19.25 15.2826 19.25 10.174C19.25 5.06532 15.1086 0.92395 10 0.92395C4.89137 0.92395 0.75 5.06532 0.75 10.174C0.75 15.2826 4.89137 19.424 10 19.424Z" stroke="#DDDDDD" stroke-width="1.5"/>
+                        <path d="M10 9.98694V14.9869" stroke="#DDDDDD" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M10 7.86194C10.6904 7.86194 11.25 7.30229 11.25 6.61194C11.25 5.92158 10.6904 5.36194 10 5.36194C9.30964 5.36194 8.75 5.92158 8.75 6.61194C8.75 7.30229 9.30964 7.86194 10 7.86194Z" fill="#DDDDDD"/>
+                        </svg>
+                        
+                </div>
+            </div>
+            <div class="list-your-property-facilities-content">
+                <div class="key-deposit-content list-your-property-facilities-option">
+                    <label class="key-deposit-confirm facilities-checkbox">
+                        <!-- <div class="key-deposit-checkbox">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8333 2.16667V13.8333H2.16667V2.16667H13.8333ZM13.8333 0.5H2.16667C1.25 0.5 0.5 1.25 0.5 2.16667V13.8333C0.5 14.75 1.25 15.5 2.16667 15.5H13.8333C14.75 15.5 15.5 14.75 15.5 13.8333V2.16667C15.5 1.25 14.75 0.5 13.8333 0.5Z" fill="#C0C0C0"/>
+                                </svg>                                    
+                        </div> -->
+                        <input type="checkbox" class="custom-checkbox raise-complaints-checkbox-square">
+                        <h2>Focused</h2>
+                    </label>
+                </div>
+                <div class="list-your-property-info-circle-svg">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 19.424C15.1086 19.424 19.25 15.2826 19.25 10.174C19.25 5.06532 15.1086 0.92395 10 0.92395C4.89137 0.92395 0.75 5.06532 0.75 10.174C0.75 15.2826 4.89137 19.424 10 19.424Z" stroke="#DDDDDD" stroke-width="1.5"/>
+                        <path d="M10 9.98694V14.9869" stroke="#DDDDDD" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M10 7.86194C10.6904 7.86194 11.25 7.30229 11.25 6.61194C11.25 5.92158 10.6904 5.36194 10 5.36194C9.30964 5.36194 8.75 5.92158 8.75 6.61194C8.75 7.30229 9.30964 7.86194 10 7.86194Z" fill="#DDDDDD"/>
+                        </svg>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="filter-modal-footer list-your-property-footer">
+            <div class="filter-modal-footer-show-result-btn filter-modal-footer-user-done">
+                <button type="submit" id="aminities-submit-btn">
+                    Next
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

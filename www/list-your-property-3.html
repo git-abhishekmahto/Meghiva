@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container notification-container hostel-rules-container">
+        <div class="booking-history-title payment-title ">
+            <div class="notification-title-content payment-title-content back-icon ">
+                <a href="list-your-property-2.html" class="notification-title-svg payment-title-svg">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.8333 10H4.16663" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M9.99996 15.8334L4.16663 10.0001L9.99996 4.16675" stroke="#363939" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <div class="logo logo-1">
+                    <img src="assets/images/meghani-removebg-preview.png" alt="logo.png">
+                </div>
+            </div>
+        </div>
+        <div class="list-your-property-top-content">
+            <!-- <div class="list-your-property-progress-text">
+                <h3><span>5</span> of 6 steps completed</h3>
+            </div> -->
+            <div class="list-your-property-progress-box-content">
+                <div class="list-your-property-progress-box fill-box"></div>
+                <div class="list-your-property-progress-box fill-box"></div>
+                <div class="list-your-property-progress-box fill-box"></div>
+                <div class="list-your-property-progress-box fill-box"></div>
+                <div class="list-your-property-progress-box"></div>
+                <div class="list-your-property-progress-box"></div>
+            </div>
+            <div class="list-your-property-top-text">
+                <h2>Room Details:</h2>
+            </div>
+        </div>
+        <div class="upload-identity-card-container upload-stay-photos-container" id="custom-upload">
+            <input type="file" style="display: none;" id="real-file" multiple/>
+            <div class="upload-identity-card-content" id="custom-upload">
+                <div class="upload-identity-card-content-img">
+                    <img src="assets/images/browse.png" alt="">
+                </div>
+                <div class="upload-identity-card-content-browse-text">
+                    <h2>Browse Files</h2>
+                </div>
+                <div class="upload-identity-card-content-upload-aadhar-text">
+                    <h2>Upload Stay Photos.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="upload-property-img-container">
+            <div class="upload-property-img-content" id="property-image-preview-content">
+                <!-- <div class="upload-property-img-box"> 
+                    <div class="upload-property-delete-img-svg">
+                        <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.97309 3.02091L8.53921 10.3968C8.52304 10.6727 8.40203 10.932 8.20094 11.1216C7.99985 11.3112 7.73389 11.4168 7.4575 11.4167H3.54234C3.26595 11.4168 2.99999 11.3112 2.7989 11.1216C2.59781 10.932 2.4768 10.6727 2.46063 10.3968L2.02784 3.02091H0.895752V2.47925C0.895752 2.40742 0.924286 2.33853 0.975077 2.28774C1.02587 2.23695 1.09476 2.20841 1.16659 2.20841H9.83325C9.90508 2.20841 9.97397 2.23695 10.0248 2.28774C10.0756 2.33853 10.1041 2.40742 10.1041 2.47925V3.02091H8.97309ZM4.41659 0.854248H6.58325C6.65508 0.854248 6.72397 0.882782 6.77476 0.933573C6.82555 0.984364 6.85409 1.05325 6.85409 1.12508V1.66675H4.14575V1.12508C4.14575 1.05325 4.17429 0.984364 4.22508 0.933573C4.27587 0.882782 4.34476 0.854248 4.41659 0.854248ZM3.87492 4.37508L4.14575 9.25008H4.95825L4.74159 4.37508H3.87492ZM6.31242 4.37508L6.04159 9.25008H6.85409L7.12492 4.37508H6.31242Z" fill="white"/>
+                            </svg>                            
+                    </div>
+                    <img src="assets/images/a.jpeg" alt="">
+                </div>
+                <div class="upload-property-img-box">
+                    <div class="upload-property-delete-img-svg">
+                        <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.97309 3.02091L8.53921 10.3968C8.52304 10.6727 8.40203 10.932 8.20094 11.1216C7.99985 11.3112 7.73389 11.4168 7.4575 11.4167H3.54234C3.26595 11.4168 2.99999 11.3112 2.7989 11.1216C2.59781 10.932 2.4768 10.6727 2.46063 10.3968L2.02784 3.02091H0.895752V2.47925C0.895752 2.40742 0.924286 2.33853 0.975077 2.28774C1.02587 2.23695 1.09476 2.20841 1.16659 2.20841H9.83325C9.90508 2.20841 9.97397 2.23695 10.0248 2.28774C10.0756 2.33853 10.1041 2.40742 10.1041 2.47925V3.02091H8.97309ZM4.41659 0.854248H6.58325C6.65508 0.854248 6.72397 0.882782 6.77476 0.933573C6.82555 0.984364 6.85409 1.05325 6.85409 1.12508V1.66675H4.14575V1.12508C4.14575 1.05325 4.17429 0.984364 4.22508 0.933573C4.27587 0.882782 4.34476 0.854248 4.41659 0.854248ZM3.87492 4.37508L4.14575 9.25008H4.95825L4.74159 4.37508H3.87492ZM6.31242 4.37508L6.04159 9.25008H6.85409L7.12492 4.37508H6.31242Z" fill="white"/>
+                            </svg> 
+                    </div>
+                    <img src="assets/images/a.jpeg" alt="">
+                </div>
+                <div class="upload-property-img-box">
+                    <div class="upload-property-delete-img-svg">
+                        <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.97309 3.02091L8.53921 10.3968C8.52304 10.6727 8.40203 10.932 8.20094 11.1216C7.99985 11.3112 7.73389 11.4168 7.4575 11.4167H3.54234C3.26595 11.4168 2.99999 11.3112 2.7989 11.1216C2.59781 10.932 2.4768 10.6727 2.46063 10.3968L2.02784 3.02091H0.895752V2.47925C0.895752 2.40742 0.924286 2.33853 0.975077 2.28774C1.02587 2.23695 1.09476 2.20841 1.16659 2.20841H9.83325C9.90508 2.20841 9.97397 2.23695 10.0248 2.28774C10.0756 2.33853 10.1041 2.40742 10.1041 2.47925V3.02091H8.97309ZM4.41659 0.854248H6.58325C6.65508 0.854248 6.72397 0.882782 6.77476 0.933573C6.82555 0.984364 6.85409 1.05325 6.85409 1.12508V1.66675H4.14575V1.12508C4.14575 1.05325 4.17429 0.984364 4.22508 0.933573C4.27587 0.882782 4.34476 0.854248 4.41659 0.854248ZM3.87492 4.37508L4.14575 9.25008H4.95825L4.74159 4.37508H3.87492ZM6.31242 4.37508L6.04159 9.25008H6.85409L7.12492 4.37508H6.31242Z" fill="white"/>
+                            </svg> 
+                    </div>
+                    <img src="assets/images/a.jpeg" alt="">
+                </div>
+                <div class="upload-property-img-box">
+                    <div class="upload-property-delete-img-svg">
+                        <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.97309 3.02091L8.53921 10.3968C8.52304 10.6727 8.40203 10.932 8.20094 11.1216C7.99985 11.3112 7.73389 11.4168 7.4575 11.4167H3.54234C3.26595 11.4168 2.99999 11.3112 2.7989 11.1216C2.59781 10.932 2.4768 10.6727 2.46063 10.3968L2.02784 3.02091H0.895752V2.47925C0.895752 2.40742 0.924286 2.33853 0.975077 2.28774C1.02587 2.23695 1.09476 2.20841 1.16659 2.20841H9.83325C9.90508 2.20841 9.97397 2.23695 10.0248 2.28774C10.0756 2.33853 10.1041 2.40742 10.1041 2.47925V3.02091H8.97309ZM4.41659 0.854248H6.58325C6.65508 0.854248 6.72397 0.882782 6.77476 0.933573C6.82555 0.984364 6.85409 1.05325 6.85409 1.12508V1.66675H4.14575V1.12508C4.14575 1.05325 4.17429 0.984364 4.22508 0.933573C4.27587 0.882782 4.34476 0.854248 4.41659 0.854248ZM3.87492 4.37508L4.14575 9.25008H4.95825L4.74159 4.37508H3.87492ZM6.31242 4.37508L6.04159 9.25008H6.85409L7.12492 4.37508H6.31242Z" fill="white"/>
+                            </svg> 
+                    </div>
+                    <img src="assets/images/a.jpeg" alt="">
+                </div>  -->
+            </div>
+        </div>
+        <div class="leave-duration-section mt-20">
+            <div class="leave-duration-content">
+                <div class="leave-duration-content-title">
+                    <h2>Total number of rooms available</h2>
+                </div>
+                <div class="leave-duration-input-content list-your-property-input">
+                    <input type="number" placeholder="Total rooms available" id="total-rooms">
+                </div>
+            </div>
+        </div>
+        <div class="leave-duration-section mt-16">
+            <div class="leave-duration-content">
+                <div class="leave-duration-content-title">
+                    <h2>Total number of beds available</h2>
+                </div>
+                <div class="leave-duration-input-content list-your-property-input">
+                    <input type="number" placeholder="Total beds available" id="total-beds">
+                </div>
+            </div>
+        </div>
+        <div class="leave-duration-section mt-16 mb-120">
+            <div class="leave-duration-content">
+                <div class="leave-duration-content-title">
+                    <h2>Stayers per room</h2>
+                    <h3>For ex- 1 to 4</h3>
+                </div>
+                <div class="leave-duration-input-content list-your-property-input">
+                    <input type="number" placeholder="Total beds available" id="stayer-range">
+                </div>
+            </div>
+        </div>
+        
+
+
+
+
+
+
+
+        <div class="filter-modal-footer list-your-property-footer">
+            <div class="filter-modal-footer-show-result-btn filter-modal-footer-user-done">
+                <button onclick="uploadImg()">
+                    Next
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        let customUpload = document.getElementById("custom-upload");
+        let inputFile = document.getElementById("real-file");
+
+        customUpload.addEventListener("click" , () => {
+            inputFile.click();
+        });
+    </script>
+</body>
+
+</html>

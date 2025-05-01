@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="intro-container">
+            <div class="intro-content">
+                <div class="intro-box-img intro-box-img1"><img src="assets/images/intro-1.jpeg" alt=""></div>
+                <div class="intro-box-img intro-box-img2"><img src="assets/images/intro-2.jpeg" alt=""></div>
+                
+                <div class="intro-box-img intro-box-img3"><img src="assets/images/intro-3.jpeg" alt=""></div>
+                <div class="intro-box-img intro-box-img4"><img src="assets/images/intro-4.jpeg" alt=""></div>
+                <div class="intro-box-img intro-box-img5"><img src="assets/images/intro-5.jpeg" alt=""></div>
+                <div class="intro-box-img intro-box-img6"><img src="assets/images/intro-6.jpeg" alt=""></div>
+                <div class="intro-box-mid-content" id="intro-mid-animate">
+                    <div class="intro-box-mid-img"><img src="assets/images/intro-main.png" alt=""></div>
+                    <h2>Your Struggling Partner</h2>
+                </div>
+                <div class="intro-footer-content" id="intro-footer-content">
+                    <a href="onboarding.html" class="intro-footer-btn">
+                        <button>Let's begin</button>
+                    </a>
+                    <div class="intro-footer-bottom-text mt-16" onclick="window.location.href='login.html'">
+                        <h2>
+                            Already have an account?
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        let introMid = document.getElementById("intro-mid-animate"); 
+
+        localStorage.setItem("first-time" , 1);
+        setTimeout(() => {
+
+            introMid.classList.add("active");
+
+        },1600);
+
+        let introFooter = document.getElementById("intro-footer-content");
+
+        setTimeout(() => {
+            
+            introFooter.classList.add("active");
+        }, 1800);
+
+    </script>
+</body>
+
+</html>

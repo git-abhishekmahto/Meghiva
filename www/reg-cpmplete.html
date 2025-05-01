@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="intro-container">
+            <div class="intro-content">
+                <div class="intro-box-img reg-complete-img1"><img src="assets/images/reg-complete-1.jpeg" alt=""></div>
+                <div class="intro-box-img reg-complete-img2"><img src="assets/images/reg-complete-2.jpeg" alt=""></div>
+                
+                <div class="intro-box-img reg-complete-img3"><img src="assets/images/reg-complete-3.jpeg" alt=""></div>
+                <div class="intro-box-img reg-complete-img4"><img src="assets/images/reg-complete-4.jpeg" alt=""></div>
+                <div class="intro-box-img reg-complete-img5"><img src="assets/images/reg-complete-5.jpeg" alt=""></div>
+                <div class="intro-box-mid-content reg-complete-mid-content" id="intro-mid-animate">
+                    <h1>Woohoo! You’re All Set!</h1>
+
+                    <h2>Welcome to Meghani Homex!</h2>
+                    <h3>Your journey to a comfortable stay starts now!</h3>
+                </div>
+                <div class="intro-footer-content reg-complete-footer-content" id="intro-footer-content">
+                    <a href="index.html" class="intro-footer-btn">
+                        <button>Let’s start booking</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        let introMid = document.getElementById("intro-mid-animate"); 
+
+        setTimeout(() => {
+
+            introMid.classList.add("active");
+
+        },1600);
+
+        let introFooter = document.getElementById("intro-footer-content");
+
+        setTimeout(() => {
+            
+            introFooter.classList.add("active");
+        }, 1800);
+
+    </script>
+</body>
+
+</html>

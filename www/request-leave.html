@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .container {
+            overflow: hidden;
+            /* Extra content bahar na jaye */
+            /* position: relative; */
+        }
+
+        .request-leave-carousel {
+            width: 100%;
+            /* Ensure full width */
+        }
+
+
+        .request-leave-carousel-content {
+            width: 100%;
+            /* Ensure full width */
+            /* flex-shrink: 0; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container request-leave-container">
+        <div class="request-leave-top-content" id="showon-temporary-leave">
+            <div class="booking-history-title payment-title request-leave-title">
+                <div class="notification-title-content payment-title-content back-icon">
+                    <a href="my-hostel.html" class="notification-title-svg payment-title-svg">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.8333 10H4.16663" stroke="#363939" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M9.99996 15.8334L4.16663 10.0001L9.99996 4.16675" stroke="#363939" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <h2>Request Leave</h2>
+                </div>
+            </div>
+            <div class="notification-buttons request-leave-top-btn">
+                <div class="notification-btn">
+                    <button class="btn active" id="temporaryBtn">Temporary Leave</button>
+                </div>
+                <div class="notification-btn">
+                    <button class="btn" id="permanentBtn">Permanent Leave</button>
+                </div>
+            </div>
+            <div class="owl-carousel request-leave-carousel">
+                <div class="request-leave-carousel-content temporary-container">
+                    <div class="temporary-request-content " id="temporary-request-content">
+                        <div class="leave-type-content">
+                            <div class="leave-type-title">
+                                <h2>Leave Type</h2>
+                            </div>
+                            <div class="leave-type-select-content">
+                                <div class="leave-type-select-content-title" id="toggle-leave-type-ul">
+                                    <h2>Select</h2>
+                                    <div class="leave-type-select-content-title-svg">
+                                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.41 7.41L6 2.83L10.59 7.41L12 6L6 0L0 6L1.41 7.41Z"
+                                                fill="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <ul class="leave-type-select-content-dropdown">
+                                    <li>Vacation</li>
+                                    <li>Medical</li>
+                                    <li>Family Emergency</li>
+                                    <li>Other</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="leave-duration-section">
+                            <div class="leave-duration-title">
+                                <h2>Leave Duration</h2>
+                            </div>
+                            <div class="leave-duration-content">
+                                <div class="leave-duration-content-title">
+                                    <h2>From Date</h2>
+                                    <h3>MM/DD/YYYY</h3>
+                                </div>
+                                <div class="leave-duration-input-content">
+                                    <input type="date" class="custom-date">
+                                    <div class="leave-duration-input-placeholder-icon my-date">
+                                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.5 8.1665H3.83333V9.83317H5.5V8.1665ZM8.83333 8.1665H7.16667V9.83317H8.83333V8.1665ZM12.1667 8.1665H10.5V9.83317H12.1667V8.1665ZM13.8333 2.33317H13V0.666504H11.3333V2.33317H4.66667V0.666504H3V2.33317H2.16667C1.24167 2.33317 0.508333 3.08317 0.508333 3.99984L0.5 15.6665C0.5 16.5832 1.24167 17.3332 2.16667 17.3332H13.8333C14.75 17.3332 15.5 16.5832 15.5 15.6665V3.99984C15.5 3.08317 14.75 2.33317 13.8333 2.33317ZM13.8333 15.6665H2.16667V6.49984H13.8333V15.6665Z"
+                                                fill="black" fill-opacity="0.25" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="leave-duration-content">
+                                <div class="leave-duration-content-title">
+                                    <h2>To Date</h2>
+                                    <h3>MM/DD/YYYY</h3>
+                                </div>
+                                <div class="leave-duration-input-content">
+                                    <input type="date" class="custom-date">
+                                    <div class="leave-duration-input-placeholder-icon my-date">
+                                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.5 8.1665H3.83333V9.83317H5.5V8.1665ZM8.83333 8.1665H7.16667V9.83317H8.83333V8.1665ZM12.1667 8.1665H10.5V9.83317H12.1667V8.1665ZM13.8333 2.33317H13V0.666504H11.3333V2.33317H4.66667V0.666504H3V2.33317H2.16667C1.24167 2.33317 0.508333 3.08317 0.508333 3.99984L0.5 15.6665C0.5 16.5832 1.24167 17.3332 2.16667 17.3332H13.8333C14.75 17.3332 15.5 16.5832 15.5 15.6665V3.99984C15.5 3.08317 14.75 2.33317 13.8333 2.33317ZM13.8333 15.6665H2.16667V6.49984H13.8333V15.6665Z"
+                                                fill="black" fill-opacity="0.25" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leave-duration-section">
+                            <div class="leave-duration-content">
+                                <div class="leave-duration-content-title">
+                                    <h2>Reason for Leave</h2>
+                                </div>
+                                <div class="leave-duration-input-content reason-for-leave-input">
+                                    <textarea class="reason-for-leave-textarea" maxlength="150"></textarea>
+                                    <div class="character-counter-leave-duration">0/150</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leave-duration-section mt-16">
+                            <div class="leave-duration-content">
+                                <div class="leave-duration-content-title">
+                                    <h2>Emergency Contact Number</h2>
+                                </div>
+                                <div class="leave-duration-input-content reason-for-leave-input">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="request-leave-footer">
+                            <div class="request-leave-footer-content">
+                                <div class="request-leave-footer-title">
+                                    <h2>Hostel Key Deposit Confirmation</h2>
+                                </div>
+                                <div class="key-deposit-content">
+                                    <label class="key-deposit-confirm">
+                                        <!-- <div class="key-deposit-checkbox">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.8333 2.16667V13.8333H2.16667V2.16667H13.8333ZM13.8333 0.5H2.16667C1.25 0.5 0.5 1.25 0.5 2.16667V13.8333C0.5 14.75 1.25 15.5 2.16667 15.5H13.8333C14.75 15.5 15.5 14.75 15.5 13.8333V2.16667C15.5 1.25 14.75 0.5 13.8333 0.5Z" fill="#C0C0C0"/>
+                                                </svg>                                    
+                                        </div> -->
+                                        <input type="checkbox" class="custom-checkbox raise-complaints-checkbox-square">
+                                        <h2>I will deposit my room key at the reception.</h2>
+                                    </label>
+                                </div>
+                                <div class="leave-request-submit-btn">
+                                    <button>Submit Request</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="request-leave-carousel-content permanent-container">
+                    <div class="parmanent-request-content " id="parmanent-request-content">
+                        <div class="leave-type-content">
+                            <div class="prc-leave-type-title leave-type-title">
+                                <h2>Basic Information</h2>
+                            </div>
+                        </div>
+                        <div class="leave-duration-section prc-leave-duration-section">
+                            <div class="leave-duration-content">
+                                <div class="leave-duration-content-title">
+                                    <h2>Student Name</h2>
+                                </div>
+                                <div class="leave-duration-input-content">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="leave-duration-content">
+                                <div class="leave-duration-content-title">
+                                    <h2>Hostel Name</h2>
+                                </div>
+                                <div class="leave-duration-input-content">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="leave-duration-content">
+                                <div class="leave-duration-content-title">
+                                    <h2>Hostel Room Number</h2>
+                                </div>
+                                <div class="leave-duration-input-content">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="leave-duration-content">
+                                <div class="leave-duration-content-title">
+                                    <h2>Contact Number</h2>
+                                </div>
+                                <div class="leave-duration-input-content">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="leave-duration-content">
+                                <div class="leave-duration-content-title">
+                                    <h2>Email ID</h2>
+                                </div>
+                                <div class="leave-duration-input-content">
+                                    <input type="text" id="email-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leave-type-content">
+                            <div class="prc-leave-type-title leave-type-title">
+                                <h2>Leave Details</h2>
+                            </div>
+                        </div>
+                        <div class="leave-duration-section mt-1">
+                            <div class="leave-duration-content">
+                                <div class="leave-duration-content-title">
+                                    <h2>Reason for Leaving</h2>
+                                </div>
+                            </div>
+                            <div class="leave-type-select-content">
+                                <div class="leave-type-select-content-title" id="toggle-leave-type-ul1">
+                                    <h2>Select</h2>
+                                    <div class="leave-type-select-content-title-svg">
+                                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.41 7.41L6 2.83L10.59 7.41L12 6L6 0L0 6L1.41 7.41Z"
+                                                fill="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <ul class="leave-type-select-content-dropdown leave-type-select-content-dropdown1 ">
+                                    <li>Job Relocation</li>
+                                    <li>College Transfer</li>
+                                    <li>Family Issues</li>
+                                    <li>Financial Issues</li>
+                                    <li>Other</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="leave-duration-section">
+                            <div class="leave-duration-content">
+                                <div class="leave-duration-content-title">
+                                    <h2>Last Date of Stay</h2>
+                                    <h3>MM/DD/YYYY</h3>
+                                </div>
+                                <div class="leave-duration-input-content">
+                                    <input type="date" class="custom-date">
+                                    <div class="leave-duration-input-placeholder-icon my-date">
+                                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.5 8.1665H3.83333V9.83317H5.5V8.1665ZM8.83333 8.1665H7.16667V9.83317H8.83333V8.1665ZM12.1667 8.1665H10.5V9.83317H12.1667V8.1665ZM13.8333 2.33317H13V0.666504H11.3333V2.33317H4.66667V0.666504H3V2.33317H2.16667C1.24167 2.33317 0.508333 3.08317 0.508333 3.99984L0.5 15.6665C0.5 16.5832 1.24167 17.3332 2.16667 17.3332H13.8333C14.75 17.3332 15.5 16.5832 15.5 15.6665V3.99984C15.5 3.08317 14.75 2.33317 13.8333 2.33317ZM13.8333 15.6665H2.16667V6.49984H13.8333V15.6665Z"
+                                                fill="black" fill-opacity="0.25" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leave-duration-section">
+                            <div class="leave-duration-content">
+                                <div class="leave-duration-content-title">
+                                    <h2>Forwarding Address</h2>
+                                    <h3>Optional</h3>
+                                </div>
+                                <div class="leave-duration-input-content reason-for-leave-input">
+                                    <textarea class="reason-for-leave-textarea" maxlength="150"></textarea>
+                                    <div class="character-counter-leave-duration">0/150</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leave-duration-section">
+                            <div class="leave-duration-content">
+                                <div class="leave-duration-content-title">
+                                    <h2>Last Date of Stay</h2>
+                                    <h3>MM/DD/YYYY</h3>
+                                </div>
+                                <div class="leave-duration-input-content">
+                                    <input type="date" class="custom-date">
+                                    <div class="leave-duration-input-placeholder-icon my-date">
+                                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.5 8.1665H3.83333V9.83317H5.5V8.1665ZM8.83333 8.1665H7.16667V9.83317H8.83333V8.1665ZM12.1667 8.1665H10.5V9.83317H12.1667V8.1665ZM13.8333 2.33317H13V0.666504H11.3333V2.33317H4.66667V0.666504H3V2.33317H2.16667C1.24167 2.33317 0.508333 3.08317 0.508333 3.99984L0.5 15.6665C0.5 16.5832 1.24167 17.3332 2.16667 17.3332H13.8333C14.75 17.3332 15.5 16.5832 15.5 15.6665V3.99984C15.5 3.08317 14.75 2.33317 13.8333 2.33317ZM13.8333 15.6665H2.16667V6.49984H13.8333V15.6665Z"
+                                                fill="black" fill-opacity="0.25" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leave-duration-section">
+                            <div class="leave-duration-content">
+                                <div class="leave-duration-content-title">
+                                    <h2>Any Belongings Left Behind</h2>
+                                </div>
+                                <div class="yes-no-checkbox-content">
+                                    <!-- <div class="yes-no-check-box">
+                                        <div class="yes-no-checkbox"></div>
+                                        <h2>Yes</h2>
+                                    </div>
+                                    <div class="yes-no-check-box">
+                                        <div class="yes-no-checkbox"></div>
+                                        <h2>No</h2>
+                                    </div> -->
+                                    <div class="yes-no-check-box">
+                                        <label>
+                                            <input type="radio" name="yes-no" value="yes">
+                                            <h2>Yes</h2>
+                                        </label>
+                                    </div>
+                                    <div class="yes-no-check-box">
+                                        <label>
+                                            <input type="radio" name="yes-no" value="no">
+                                            <h2>No</h2>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leave-type-content">
+                            <div class="prc-leave-type-title leave-type-title">
+                                <h2>Security Deposit Refund Details</h2>
+                            </div>
+                        </div>
+                        <div class="leave-duration-section refund-mode-section">
+                            <div class="leave-duration-content">
+                                <div class="leave-duration-content-title">
+                                    <h2>Refund Mode</h2>
+                                </div>
+                            </div>
+                            <div class="leave-type-select-content">
+                                <div class="leave-type-select-content-title" id="toggle-leave-type-ul2">
+                                    <h2>Select</h2>
+                                    <div class="leave-type-select-content-title-svg">
+                                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.41 7.41L6 2.83L10.59 7.41L12 6L6 0L0 6L1.41 7.41Z"
+                                                fill="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <ul class="leave-type-select-content-dropdown leave-type-select-content-dropdown2 ">
+                                    <li>Bank Transfer</li>
+                                    <li>UPI Transfer</li>
+                                    <li>Cash (currently not available)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="leave-type-content">
+                            <div class="prc-leave-type-title leave-type-title">
+                                <h2>Bank Transfer</h2>
+                            </div>
+                        </div>
+                        <div class="leave-duration-section prc-leave-duration-section">
+                            <div class="leave-duration-content">
+                                <div class="leave-duration-content-title">
+                                    <h2>Account Holder Name</h2>
+                                </div>
+                                <div class="leave-duration-input-content">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="leave-duration-content">
+                                <div class="leave-duration-content-title">
+                                    <h2>Bank Name</h2>
+                                </div>
+                                <div class="leave-duration-input-content">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="leave-duration-content">
+                                <div class="leave-duration-content-title">
+                                    <h2>Account Number</h2>
+                                </div>
+                                <div class="leave-duration-input-content">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="leave-duration-content">
+                                <div class="leave-duration-content-title">
+                                    <h2>IFSC Code</h2>
+                                </div>
+                                <div class="leave-duration-input-content">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leave-type-content">
+                            <div class="prc-leave-type-title leave-type-title">
+                                <h2>UPI Transfer</h2>
+                            </div>
+                        </div>
+                        <div class="leave-duration-section prc-leave-duration-section">
+                            <div class="leave-duration-content">
+                                <div class="leave-duration-content-title">
+                                    <h2>UPI ID</h2>
+                                </div>
+                                <div class="leave-duration-input-content">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="request-leave-footer">
+                            <div class="request-leave-footer-content">
+                                <div class="key-deposit-content">
+                                    <label class="key-deposit-confirm">
+                                        <!-- <div class="key-deposit-checkbox">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.8333 2.16667V13.8333H2.16667V2.16667H13.8333ZM13.8333 0.5H2.16667C1.25 0.5 0.5 1.25 0.5 2.16667V13.8333C0.5 14.75 1.25 15.5 2.16667 15.5H13.8333C14.75 15.5 15.5 14.75 15.5 13.8333V2.16667C15.5 1.25 14.75 0.5 13.8333 0.5Z" fill="#C0C0C0"/>
+                                                </svg>                                    
+                                        </div> -->
+                                        <input type="checkbox" class="custom-checkbox raise-complaints-checkbox-square">
+                                        <h2>I confirm that I have cleared all my dues, and the refund details provided
+                                            are correct.</h2>
+                                    </label>
+                                </div>
+                                <div class="leave-request-submit-btn">
+                                    <button>Submit Request</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+      
+
+        // Step 2: Custom trigger from .my-date
+        // let myDate = document.querySelectorAll(".my-date");
+        // myDate.forEach(d => {
+        //     let input = d.previousElementSibling;
+
+        //     d.addEventListener("click", function () {
+        //         input._flatpickr.open(); // 🔥 flatpickr instance method to open calendar
+        //         input.style.color = 'initial';
+        //     });
+        // });
+    </script>
+</body>
+
+</html>

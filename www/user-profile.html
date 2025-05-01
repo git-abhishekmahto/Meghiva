@@ -1,0 +1,687 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homex</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+</head>
+
+<body>
+
+    <div class="container user-profile">
+        <div class="user-profile-content">
+            <div class="booking-history-title">
+                <h2>Profile</h2>
+            </div>
+        </div>
+        <div class="user-profile-hero-content">
+            <div class="left-user-profile-hero-content">
+                <h2 id="user-profile-name">Abhishek Mahto</h2>
+                <p id="user-profile-about">Entrepreneur on a mission to redefine hostel living with comfort, community, and convenience for
+                    students & bachelors.</p>
+                <input type="text" value="Abhishek Mahto" class="my-input edit-hide" id="user-name-input">
+                <textarea class="my-textarea edit-hide" id="user-about-input">Entrepreneur on a mission to redefine hostel living with comfort, community, and convenience for students & bachelors.</textarea>
+
+                <button id="edit-btn" class="edit-btn">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.25 4.25H2.5C2.10218 4.25 1.72064 4.40804 1.43934 4.68934C1.15804 4.97064 1 5.35218 1 5.75V12.5C1 12.8978 1.15804 13.2794 1.43934 13.5607C1.72064 13.842 2.10218 14 2.5 14H9.25C9.64782 14 10.0294 13.842 10.3107 13.5607C10.592 13.2794 10.75 12.8978 10.75 12.5V11.75" stroke="#363939" stroke-width="0.833333" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 2.75008L12.25 5.00008M13.2888 3.93883C13.5841 3.64345 13.7501 3.24282 13.7501 2.82508C13.7501 2.40734 13.5841 2.00672 13.2888 1.71133C12.9934 1.41595 12.5927 1.25 12.175 1.25C11.7573 1.25 11.3566 1.41595 11.0613 1.71133L4.75 8.00008V10.2501H7L13.2888 3.93883Z" stroke="#363939" stroke-width="0.833333" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                        
+                    Edit
+                </button>
+                <button id="done-btn" class="edit-hide">Done</button>
+                
+            </div>
+            <div class="right-user-profile-hero-content" id="upload-profile-img">
+                <input type="file" id="user-profile-input" hidden>
+                <div class="profile-img">
+                    <img src="assets/images/abhi.jpg" alt="">
+                </div>
+                <div class="change-profile-img-text edit-hide" id="change-profile-img-text">
+                    <h2>Change Profile</h2>
+                </div>
+            </div>
+
+        </div>
+        <div class="popular-stays">
+            <div class="popular-stay-top choice-pannel">
+                <h2>My Location</h2>
+                <div class="all-stay-search-right-title" id="price-filter-modal">
+                    <div class="search-page-filter user-profile-filter">
+                        <div class="search-page-filter-svg">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2095_149)">
+                                <path d="M2.66666 13.9997V9.33301" stroke="#797A7B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.66666 6.66667V2" stroke="#797A7B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 14V8" stroke="#797A7B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 5.33333V2" stroke="#797A7B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.3333 14.0003V10.667" stroke="#797A7B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.3333 8V2" stroke="#797A7B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.666656 9.33301H4.66666" stroke="#797A7B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 5.33301H10" stroke="#797A7B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.3333 10.667H15.3333" stroke="#797A7B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_2095_149">
+                                <rect width="16" height="16" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>                                
+
+                        </div>
+                        <h2>Filters</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view-map-box">
+            <div class="view-map-content">
+                <div class="view-map-top">
+                    <div class="my-location-img">
+                        <img src="assets/images/user-p.jpg" alt="">
+                    </div>
+                    <div class="my-map-content">
+                        <h2>Find Hostels, PGs and Flats</h2>
+                        <h3>₹<span id="min-val-in-map">2000</span> - ₹<span id="max-val-in-map">14000</span></h3>
+                        <p>Search nearby stays</p>
+                    </div>
+                </div>
+                <div class="location-area-img">
+                    <div class="geo-circle">
+                        <div class="geo-mini-circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popular-stays">
+            <div class="popular-stay-top choice-pannel">
+                <h2>My Interests</h2>
+                <a href="my-intrest.html">
+                    <p>View all</p>
+                </a>
+            </div>
+        </div>
+        <div class="user-intrest-box">
+            <div class="user-intrest-content">
+                <div class="user-intrest-top">
+                    <div class="left-side-intrest">
+                        <div class="intrest-gaming">
+                            <h2>Gaming</h2>
+                            <div class="intrest-img">
+                                <img src="assets/images/gaming.png" alt="">
+                            </div>
+                        </div>
+                        <div class="intrest-music">
+                            <h2>Music</h2>
+                            <div class="intrest-img">
+                                <img src="assets/images/music.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-side-intrest">
+                        <div class="intrest-fashion">
+                            <h2>Fashion</h2>
+                            <div class="intrest-img">
+                                <img src="assets/images/goggles.png" alt="">
+                            </div>
+                        </div>
+                        <div class="intrest-reading">
+                            <h2>Reading</h2>
+                            <div class="intrest-img">
+                                <img src="assets/images/reading.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="select-intrest.html" class="select-intrest-btn pd-0 mb-0">
+                    <button>Select Interests</button>
+                </a>
+            </div>
+        </div>
+        <div class="personal-room-details">
+            <div class="popular-stays stayer-room">
+                <div class="popular-stay-top">
+                    <h2>Personal Information</h2>
+                    <div class="personal-svg" id="personal-details-edit-svg">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.125 4.125H2.25C1.78587 4.125 1.34075 4.30937 1.01256 4.63756C0.684374 4.96575 0.5 5.41087 0.5 5.875V13.75C0.5 14.2141 0.684374 14.6592 1.01256 14.9874C1.34075 15.3156 1.78587 15.5 2.25 15.5H10.125C10.5891 15.5 11.0342 15.3156 11.3624 14.9874C11.6906 14.6592 11.875 14.2141 11.875 13.75V12.875" stroke="#363939" stroke-width="0.833333" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11 2.37509L13.625 5.00009M14.8369 3.76197C15.1815 3.41735 15.3751 2.94995 15.3751 2.46259C15.3751 1.97523 15.1815 1.50783 14.8369 1.16322C14.4923 0.818603 14.0249 0.625 13.5375 0.625C13.0501 0.625 12.5827 0.818603 12.2381 1.16322L4.875 8.50009V11.1251H7.5L14.8369 3.76197Z" stroke="#363939" stroke-width="0.833333" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </div>
+                    <div class="personal-details-edit-save-btn edit-hide" id="personal-details-edit-save-btn">
+                        <button>Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="property-details personal-details-content">
+            <div class="property-details-content">
+                <div class="property-left-detail">
+                    <h2>Full Name</h2>
+                </div>
+                <div class="property-right-detail">
+                    <h2 class="personal-detail-text">Abhishek Mahto</h2>
+                    <input type="text" class="personal-detail-input edit-hide" value="Abhishek Mahto">
+                </div>
+            </div>
+            <div class="property-details-content">
+                <div class="property-left-detail">
+                    <h2>Phone number</h2>
+                </div>
+                <div class="property-right-detail">
+                    <h2 class="personal-detail-text">+91 92798 02106</h2>
+                    <input type="text" class="personal-detail-input edit-hide" value="+91 92798 02106">
+                </div>
+            </div>
+            <div class="property-details-content">
+                <div class="property-left-detail">
+                    <h2>Email address</h2>
+                </div>
+                <div class="property-right-detail">
+                    <h2 class="personal-detail-text">mail@abhishekmahto.com</h2>
+                    <!-- <input type="text" class="personal-detail-input edit-hide" value="mail@abhishekmahto.com"> -->
+                     <textarea class="personal-detail-input edit-hide">mail@abhishekmahto.com</textarea>
+                </div>
+            </div>
+            <div class="property-details-content">
+                <div class="property-left-detail">
+                    <h2>Gender</h2>
+                </div>
+                <div class="property-right-detail">
+                    <h2>Male</h2>
+                </div>
+            </div>
+            <div class="property-details-content">
+                <div class="property-left-detail">
+                    <h2>DOB</h2>
+                </div>
+                <div class="property-right-detail">
+                    <h2 class="personal-detail-text">15 Nov 2007</h2>
+                    <input type="text" class="personal-detail-input edit-hide" value="15 Nov 2007">
+                </div>
+            </div>
+            <div class="property-details-content">
+                <div class="property-left-detail">
+                    <h2>Aadhar number</h2>
+                </div>
+                <div class="property-right-detail">
+                    <h2 class="personal-detail-text">0000 0000 0000 0000</h2>
+                    <!-- <input type="text" class="personal-detail-input edit-hide" value="0000 0000 0000 0000"> -->
+                    <textarea class="personal-detail-input edit-hide">0000 0000 0000 0000</textarea>
+
+                </div>
+            </div>
+            <div class="property-details-content">
+                <div class="property-left-detail">
+                    <h2>Marital status</h2>
+                </div>
+                <div class="property-right-detail">
+                    <h2 class="personal-detail-text">Unmarried</h2>
+                    <input type="text" class="personal-detail-input edit-hide" value="Unmarried">
+                </div>
+            </div>
+            <div class="property-details-content">
+                <div class="property-left-detail">
+                    <h2>Food habit</h2>
+                </div>
+                <div class="property-right-detail">
+                    <h2 class="personal-detail-text">Veg</h2>
+                    <input type="text" class="personal-detail-input edit-hide" value="Veg">
+                </div>
+            </div>
+        </div>
+        <div class="personal-room-details">
+            <div class="popular-stays stayer-room mt-1">
+                <div class="popular-stay-top">
+                    <h2>Personal Address</h2>
+                    <div class="personal-svg" id="personal-address-edit-svg">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.125 4.125H2.25C1.78587 4.125 1.34075 4.30937 1.01256 4.63756C0.684374 4.96575 0.5 5.41087 0.5 5.875V13.75C0.5 14.2141 0.684374 14.6592 1.01256 14.9874C1.34075 15.3156 1.78587 15.5 2.25 15.5H10.125C10.5891 15.5 11.0342 15.3156 11.3624 14.9874C11.6906 14.6592 11.875 14.2141 11.875 13.75V12.875" stroke="#363939" stroke-width="0.833333" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11 2.37509L13.625 5.00009M14.8369 3.76197C15.1815 3.41735 15.3751 2.94995 15.3751 2.46259C15.3751 1.97523 15.1815 1.50783 14.8369 1.16322C14.4923 0.818603 14.0249 0.625 13.5375 0.625C13.0501 0.625 12.5827 0.818603 12.2381 1.16322L4.875 8.50009V11.1251H7.5L14.8369 3.76197Z" stroke="#363939" stroke-width="0.833333" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </div>
+                    <div class="personal-details-edit-save-btn edit-hide" id="personal-address-edit-save-btn">
+                        <button>Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="property-details personal-details-content">
+            <div class="property-details-content">
+                <div class="property-left-detail">
+                    <h2>Country</h2>
+                </div>
+                <div class="property-right-detail">
+                    <h2 class="personal-address-text">India</h2>
+                    <input type="text" class="personal-address-input edit-hide" value="India">
+                </div>
+            </div>
+            <div class="property-details-content">
+                <div class="property-left-detail">
+                    <h2>State</h2>
+                </div>
+                <div class="property-right-detail">
+                    <h2 class="personal-address-text">Jharkhand</h2>
+                    <input type="text" class="personal-address-input edit-hide" value="Jharkhand">
+                </div>
+            </div>
+            <div class="property-details-content">
+                <div class="property-left-detail">
+                    <h2>City</h2>
+                </div>
+                <div class="property-right-detail">
+                    <h2 class="personal-address-text">Ranchi</h2>
+                    <input type="text" class="personal-address-input edit-hide" value="Ranchi">
+                </div>
+            </div>
+            <div class="property-details-content">
+                <div class="property-left-detail">
+                    <h2>Postal code</h2>
+                </div>
+                <div class="property-right-detail">
+                    <h2 class="personal-address-text">835301</h2>
+                    <input type="number" class="personal-address-input edit-hide" value="834001">
+                </div>
+            </div>
+            <div class="property-details-content">
+                <div class="property-left-detail">
+                    <h2>Address</h2>
+                </div>
+                <div class="property-right-detail">
+                    <h2 class="personal-address-text">Near ABC Road Ranchi, Jharkhand</h2>
+                    <textarea class="personal-address-input edit-hide">Near ABC Road Ranchi, Jharkhand</textarea>
+                </div>
+            </div>
+        </div>
+        <div class="personal-room-details">
+            <div class="popular-stays stayer-room mt-1">
+                <div class="popular-stay-top">
+                    <h2>Guardian’s Information</h2>
+                    <div class="personal-svg" id="guardian-info-edit-svg">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.125 4.125H2.25C1.78587 4.125 1.34075 4.30937 1.01256 4.63756C0.684374 4.96575 0.5 5.41087 0.5 5.875V13.75C0.5 14.2141 0.684374 14.6592 1.01256 14.9874C1.34075 15.3156 1.78587 15.5 2.25 15.5H10.125C10.5891 15.5 11.0342 15.3156 11.3624 14.9874C11.6906 14.6592 11.875 14.2141 11.875 13.75V12.875" stroke="#363939" stroke-width="0.833333" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11 2.37509L13.625 5.00009M14.8369 3.76197C15.1815 3.41735 15.3751 2.94995 15.3751 2.46259C15.3751 1.97523 15.1815 1.50783 14.8369 1.16322C14.4923 0.818603 14.0249 0.625 13.5375 0.625C13.0501 0.625 12.5827 0.818603 12.2381 1.16322L4.875 8.50009V11.1251H7.5L14.8369 3.76197Z" stroke="#363939" stroke-width="0.833333" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </div>
+                    <div class="personal-details-edit-save-btn edit-hide" id="guardian-info-edit-save-btn">
+                        <button>Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="property-details personal-details-content">
+            <div class="property-details-content">
+                <div class="property-left-detail">
+                    <h2>Father’s name</h2>
+                </div>
+                <div class="property-right-detail">
+                    <h2 class="guardian-info-text">Suresh Mahto</h2>
+                    <input type="text" class="guardian-info-input edit-hide" value="Suresh Mahto">
+                </div>
+            </div>
+            <div class="property-details-content">
+                <div class="property-left-detail">
+                    <h2>Phone number</h2>
+                </div>
+                <div class="property-right-detail">
+                    <h2 class="guardian-info-text">+91 92798 02106</h2>
+                    <input type="number" class="guardian-info-input edit-hide" value="9279802106">
+                </div>
+            </div>
+            <div class="property-details-content">
+                <div class="property-left-detail">
+                    <h2>Aadhar number</h2>
+                </div>
+                <div class="property-right-detail">
+                    <h2 class="guardian-info-text">0000 0000 0000 0000</h2>
+                    <textarea class="guardian-info-input edit-hide">0000 0000 0000 0000</textarea>
+                </div>
+            </div>
+            <div class="property-details-content">
+                <div class="property-left-detail">
+                    <h2>Mother’s name</h2>
+                </div>
+                <div class="property-right-detail">
+                    <h2 class="guardian-info-text">Nikky Devi</h2>
+                    <input type="text" class="guardian-info-input edit-hide" value="Nikky Devi">
+                </div>
+            </div>
+            <div class="property-details-content">
+                <div class="property-left-detail">
+                    <h2>Phone number</h2>
+                </div>
+                <div class="property-right-detail">
+                    <h2 class="guardian-info-text">+91 92798 02106</h2>
+                    <input type="number" class="guardian-info-input edit-hide" value="9279802106">
+                </div>
+            </div>
+            <div class="property-details-content">
+                <div class="property-left-detail">
+                    <h2>Aadhar number</h2>
+                </div>
+                <div class="property-right-detail">
+                    <h2 class="guardian-info-text">0000 0000 0000 0000</h2>
+                    <textarea class="guardian-info-input edit-hide">0000 0000 0000 0000</textarea>
+                </div>
+            </div>
+        </div>
+        <div class="popular-stays mt-1">
+            <div class="popular-stay-top choice-pannel">
+                <h2>Identity Validation</h2>
+            </div>
+        </div>
+        <div class="identity-validation">
+            <div class="identity-validation-content">
+                <div class="my-aadhar aadhar-val">
+                    <div class="aadhar-msg">
+                        <div class="aadhar-msg-svg">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1882_3898)">
+                                    <path
+                                        d="M6 0.75C7.39239 0.75 8.72775 1.30312 9.71231 2.28769C10.6969 3.27226 11.25 4.60761 11.25 6C11.25 7.39239 10.6969 8.72775 9.71231 9.71231C8.72775 10.6969 7.39239 11.25 6 11.25C4.60761 11.25 3.27226 10.6969 2.28769 9.71231C1.30312 8.72775 0.75 7.39239 0.75 6C0.75 4.60761 1.30312 3.27226 2.28769 2.28769C3.27226 1.30312 4.60761 0.75 6 0.75ZM5.346 7.03575L4.17975 5.86875C4.13794 5.82694 4.08831 5.79378 4.03368 5.77115C3.97905 5.74852 3.9205 5.73687 3.86137 5.73687C3.80225 5.73687 3.7437 5.74852 3.68907 5.77115C3.63444 5.79378 3.58481 5.82694 3.543 5.86875C3.45856 5.95319 3.41112 6.06771 3.41112 6.18713C3.41112 6.30654 3.45856 6.42106 3.543 6.5055L5.028 7.9905C5.06969 8.03252 5.11929 8.06587 5.17393 8.08864C5.22857 8.1114 5.28718 8.12312 5.34637 8.12312C5.40557 8.12312 5.46418 8.1114 5.51882 8.08864C5.57346 8.06587 5.62306 8.03252 5.66475 7.9905L8.73975 4.91475C8.78212 4.87311 8.81582 4.8235 8.83892 4.76877C8.86202 4.71405 8.87405 4.65529 8.87433 4.59588C8.87461 4.53648 8.86312 4.47761 8.84053 4.42267C8.81794 4.36773 8.7847 4.31781 8.74272 4.27578C8.70074 4.23375 8.65086 4.20045 8.59594 4.1778C8.54103 4.15515 8.48218 4.14359 8.42277 4.14379C8.36337 4.144 8.3046 4.15597 8.24984 4.179C8.19509 4.20203 8.14544 4.23568 8.10375 4.278L5.346 7.03575Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1882_3898">
+                                        <rect width="12" height="12" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h2>Uploaded!</h2>
+                    </div>
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.8958 12.0471C19.6283 12.5812 19.005 12.9371 18.3825 12.9371C17.9107 12.9358 17.4587 12.7478 17.125 12.4143C16.7914 12.0808 16.6032 11.6288 16.6017 11.1571V9.99958C16.6017 9.02042 17.4025 8.21875 18.3825 8.21875C19.3617 8.21875 20.1625 9.02042 20.1625 9.99958V10.6229H16.6017M11.455 10.0354C11.455 9.04042 12.2692 8.22625 13.2633 8.22625C14.2592 8.22625 15.0733 9.04042 15.0733 10.0354V12.9304M11.455 10.0354C11.455 9.04042 10.6408 8.22625 9.645 8.22625C8.65084 8.22625 7.83667 9.04042 7.83667 10.0354M11.455 10.0354V12.9304M7.83667 8.22625V12.9304M19.8433 31.7804L32.1633 19.4604M11.7483 31.7804L24.0683 19.4604"
+                            stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M32.0833 4.58301H7.91667C6.07572 4.58301 4.58334 6.07539 4.58334 7.91634V32.083C4.58334 33.924 6.07572 35.4163 7.91667 35.4163H32.0833C33.9243 35.4163 35.4167 33.924 35.4167 32.083V7.91634C35.4167 6.07539 33.9243 4.58301 32.0833 4.58301Z"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h2>My-Aadhar</h2>
+                </div>
+                <div class="mother-aadhar aadhar-val">
+                    <div class="aadhar-msg">
+                        <div class="aadhar-msg-svg">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1882_3898)">
+                                    <path
+                                        d="M6 0.75C7.39239 0.75 8.72775 1.30312 9.71231 2.28769C10.6969 3.27226 11.25 4.60761 11.25 6C11.25 7.39239 10.6969 8.72775 9.71231 9.71231C8.72775 10.6969 7.39239 11.25 6 11.25C4.60761 11.25 3.27226 10.6969 2.28769 9.71231C1.30312 8.72775 0.75 7.39239 0.75 6C0.75 4.60761 1.30312 3.27226 2.28769 2.28769C3.27226 1.30312 4.60761 0.75 6 0.75ZM5.346 7.03575L4.17975 5.86875C4.13794 5.82694 4.08831 5.79378 4.03368 5.77115C3.97905 5.74852 3.9205 5.73687 3.86137 5.73687C3.80225 5.73687 3.7437 5.74852 3.68907 5.77115C3.63444 5.79378 3.58481 5.82694 3.543 5.86875C3.45856 5.95319 3.41112 6.06771 3.41112 6.18713C3.41112 6.30654 3.45856 6.42106 3.543 6.5055L5.028 7.9905C5.06969 8.03252 5.11929 8.06587 5.17393 8.08864C5.22857 8.1114 5.28718 8.12312 5.34637 8.12312C5.40557 8.12312 5.46418 8.1114 5.51882 8.08864C5.57346 8.06587 5.62306 8.03252 5.66475 7.9905L8.73975 4.91475C8.78212 4.87311 8.81582 4.8235 8.83892 4.76877C8.86202 4.71405 8.87405 4.65529 8.87433 4.59588C8.87461 4.53648 8.86312 4.47761 8.84053 4.42267C8.81794 4.36773 8.7847 4.31781 8.74272 4.27578C8.70074 4.23375 8.65086 4.20045 8.59594 4.1778C8.54103 4.15515 8.48218 4.14359 8.42277 4.14379C8.36337 4.144 8.3046 4.15597 8.24984 4.179C8.19509 4.20203 8.14544 4.23568 8.10375 4.278L5.346 7.03575Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1882_3898">
+                                        <rect width="12" height="12" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h2>Uploaded!</h2>
+                    </div>
+                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M27.8622 30.744C27.7032 30.1821 27.4091 29.6923 27.011 29.2668C27.6869 29.1334 28.3139 28.8022 28.8082 28.3079C29.4646 27.6515 29.8333 26.7613 29.8333 25.833C29.8333 24.9047 29.4646 24.0145 28.8082 23.3581C28.1518 22.7018 27.2616 22.333 26.3333 22.333C25.4051 22.333 24.5148 22.7018 23.8585 23.3581C23.2021 24.0145 22.8333 24.9048 22.8333 25.833C22.8333 26.0372 22.8512 26.2396 22.886 26.4381C22.6381 26.122 22.4245 25.7919 22.2449 25.4751C22.035 25.1051 21.8811 24.7705 21.7794 24.5281C21.7287 24.4073 21.6913 24.3102 21.6665 24.2435C21.6541 24.2102 21.6447 24.184 21.6378 24.1648L21.6277 24.1368L21.62 24.116C21.6184 24.1117 21.6152 24.1031 21.6109 24.0927C21.6096 24.0893 21.5969 24.0574 21.5778 24.0191L21.1879 23.2394L20.3623 23.5193L17.4123 24.5193L16.47 24.8387L16.7847 25.7826C16.7846 25.7824 16.7846 25.7824 16.7849 25.7832C16.7854 25.7849 16.787 25.79 16.7915 25.8039C16.7966 25.8198 16.8035 25.841 16.812 25.8669C16.829 25.9186 16.8521 25.9872 16.8817 26.0705C16.9408 26.2369 17.0254 26.4607 17.1388 26.726C17.2327 26.9458 17.3469 27.1953 17.4834 27.4651C16.2564 27.806 15.2332 28.2548 14.4743 28.8505C13.558 29.5697 13.0167 30.518 13.0167 31.6663V33.7971C11.9051 33.3101 10.7636 32.7748 9.83116 32.187C9.16439 31.7668 8.67902 31.3642 8.39453 30.9942C8.14525 30.6701 8.10321 30.4478 8.13077 30.2753L11.4386 21.2781L11.4387 21.2781L11.4428 21.2663C11.7401 20.4254 11.9778 19.7748 12.3766 19.1844C12.7568 18.6216 13.3132 18.075 14.2938 17.5541C16.4749 16.4485 17.9701 15.9997 20.5 15.9997C23.0138 15.9997 24.5257 16.4488 26.7062 17.554C27.6868 18.075 28.2432 18.6215 28.6234 19.1844C29.0222 19.7748 29.2599 20.4254 29.5572 21.2663L29.5571 21.2664L29.5614 21.2781L32.8605 30.2515C32.8609 30.327 32.8261 30.5048 32.5709 30.821C32.2678 31.1964 31.7669 31.6193 31.1019 32.0646C29.781 32.9491 28.0334 33.7783 26.5894 34.3972L26.5849 34.3992C24.6834 35.2252 22.662 35.6623 20.5295 35.6663L19.8333 35.6245V33.288L20.4005 33.3447L20.4501 33.3497H20.5C22.6822 33.3497 24.9408 32.8666 27.2678 31.9462L28.1084 31.6138L27.8622 30.744ZM20.5 4.33301C21.5609 4.33301 22.5783 4.75444 23.3284 5.50458C24.0786 6.25473 24.5 7.27214 24.5 8.33301C24.5 9.39387 24.0786 10.4113 23.3284 11.1614C22.5783 11.9116 21.5609 12.333 20.5 12.333C19.4391 12.333 18.4217 11.9116 17.6716 11.1614C16.9214 10.4113 16.5 9.39387 16.5 8.33301C16.5 7.27214 16.9214 6.25473 17.6716 5.50458C18.4217 4.75444 19.4391 4.33301 20.5 4.33301Z"
+                            stroke="white" stroke-width="2" />
+                    </svg>
+
+                    <h2>Mother's Aadhar</h2>
+                </div>
+                <a href="identity-Card-fill.html" class="father-aadhar aadhar-val">
+                    <div class="aadhar-msg temp-hide">
+                        <div class="aadhar-msg-svg">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1882_3898)">
+                                    <path
+                                        d="M6 0.75C7.39239 0.75 8.72775 1.30312 9.71231 2.28769C10.6969 3.27226 11.25 4.60761 11.25 6C11.25 7.39239 10.6969 8.72775 9.71231 9.71231C8.72775 10.6969 7.39239 11.25 6 11.25C4.60761 11.25 3.27226 10.6969 2.28769 9.71231C1.30312 8.72775 0.75 7.39239 0.75 6C0.75 4.60761 1.30312 3.27226 2.28769 2.28769C3.27226 1.30312 4.60761 0.75 6 0.75ZM5.346 7.03575L4.17975 5.86875C4.13794 5.82694 4.08831 5.79378 4.03368 5.77115C3.97905 5.74852 3.9205 5.73687 3.86137 5.73687C3.80225 5.73687 3.7437 5.74852 3.68907 5.77115C3.63444 5.79378 3.58481 5.82694 3.543 5.86875C3.45856 5.95319 3.41112 6.06771 3.41112 6.18713C3.41112 6.30654 3.45856 6.42106 3.543 6.5055L5.028 7.9905C5.06969 8.03252 5.11929 8.06587 5.17393 8.08864C5.22857 8.1114 5.28718 8.12312 5.34637 8.12312C5.40557 8.12312 5.46418 8.1114 5.51882 8.08864C5.57346 8.06587 5.62306 8.03252 5.66475 7.9905L8.73975 4.91475C8.78212 4.87311 8.81582 4.8235 8.83892 4.76877C8.86202 4.71405 8.87405 4.65529 8.87433 4.59588C8.87461 4.53648 8.86312 4.47761 8.84053 4.42267C8.81794 4.36773 8.7847 4.31781 8.74272 4.27578C8.70074 4.23375 8.65086 4.20045 8.59594 4.1778C8.54103 4.15515 8.48218 4.14359 8.42277 4.14379C8.36337 4.144 8.3046 4.15597 8.24984 4.179C8.19509 4.20203 8.14544 4.23568 8.10375 4.278L5.346 7.03575Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1882_3898">
+                                        <rect width="12" height="12" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h2>Uploaded!</h2>
+                    </div>
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.16666 23.1663H7.66666V14.9997C7.66666 14.3808 7.91249 13.7873 8.35007 13.3498C8.78766 12.9122 9.38115 12.6663 9.99999 12.6663H15C15.6188 12.6663 16.2123 12.9122 16.6499 13.3498C17.0875 13.7873 17.3333 14.3808 17.3333 14.9997V23.1663H15.8333H14.8333V24.1663V35.6663H10.1667V24.1663V23.1663H9.16666ZM25 30.6663H23.5V25.9997H31.5V30.6663H30H29V31.6663V35.6663H26V31.6663V30.6663H25ZM12.5 4.33301C13.1188 4.33301 13.7123 4.57884 14.1499 5.01643C14.5875 5.45401 14.8333 6.0475 14.8333 6.66634C14.8333 7.28518 14.5875 7.87867 14.1499 8.31626C13.7123 8.75384 13.1188 8.99967 12.5 8.99967C11.8812 8.99967 11.2877 8.75384 10.8501 8.31626C10.4125 7.87867 10.1667 7.28518 10.1667 6.66634C10.1667 6.0475 10.4125 5.45401 10.8501 5.01643C11.2877 4.57884 11.8812 4.33301 12.5 4.33301ZM25.1667 19.9997C25.1667 19.3808 25.4125 18.7873 25.8501 18.3498C26.2877 17.9122 26.8812 17.6663 27.5 17.6663C28.1188 17.6663 28.7123 17.9122 29.1499 18.3498C29.5875 18.7873 29.8333 19.3808 29.8333 19.9997C29.8333 20.6185 29.5875 21.212 29.1499 21.6496C28.7123 22.0872 28.1188 22.333 27.5 22.333C26.8812 22.333 26.2877 22.0872 25.8501 21.6496C25.4125 21.212 25.1667 20.6185 25.1667 19.9997Z"
+                            stroke="white" stroke-width="2" />
+                    </svg>
+                    <h2>Father's Aadhar</h2>
+                </a>
+            </div>
+        </div>
+        <div class="popular-stays">
+            <div class="popular-stay-top choice-pannel">
+                <h2>Other options</h2>
+            </div>
+        </div>
+        <div class="my-hostel-stay-management other-options">
+            <div class="stay-management-left">
+                <a href="my-ratings.html" class="my-ratings-option-box">
+                    <h2>My Ratings</h2>
+                    <div class="bed-type-right-icon">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 9L5 5L1 1" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </a>
+                <a href="saved-stays.html" class="wishlist-option-box">
+                    <h2>Saved Stays</h2>
+                    <div class="bed-type-right-icon">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 9L5 5L1 1" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="stay-management-right">
+                <a href="help&support.html" class="help-option-box">
+                    <h2>Help & Support</h2>
+                    <div class="bed-type-right-icon">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 9L5 5L1 1" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </a>
+                <div class="logout-option-box" id="share-icon">
+                    <h2>Logout</h2>
+                    <div class="bed-type-right-icon logout-icon">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 9L5 5L1 1" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-nav">
+            <div class="footer-link">
+                <a href="index.html" class="footer-link-icon-container ">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 1.6665L2.5 7.49984V16.6665C2.5 17.1085 2.67559 17.5325 2.98816 17.845C3.30072 18.1576 3.72464 18.3332 4.16667 18.3332H15.8333C16.2754 18.3332 16.6993 18.1576 17.0118 17.845C17.3244 17.5325 17.5 17.1085 17.5 16.6665V7.49984L10 1.6665Z"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7.5 18.3333V10H12.5V18.3333" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p>Home</p>
+                </a>
+                <a href="my-hostel.html" class="footer-link-icon-container footer-link-my-hostel">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.8333 1.6665L1.66666 5.83317M10 2.49984V18.3332H5.83333C4.26166 18.3332 3.47666 18.3332 2.98833 17.8448C2.5 17.3565 2.5 16.5715 2.5 14.9998V5.83317M10 5.83317L18.3333 9.99984"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M8.33333 18.333H14.1667C15.7383 18.333 16.5233 18.333 17.0117 17.8447C17.5 17.3563 17.5 16.5705 17.5 14.9997V9.58301M15 8.33301V5.83301M5.83333 9.16634H6.66666M5.83333 12.4997H6.66666M13.3333 11.6663H14.1667M13.75 18.333V14.9997"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p>My Hostel</p>
+                </a>
+                <a href="search-page.html" class="footer-link-icon-container">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.1486 19.94C15.2801 19.94 19.44 15.7801 19.44 10.6486C19.44 5.51709 15.2801 1.35718 10.1486 1.35718C5.01706 1.35718 0.857147 5.51709 0.857147 10.6486C0.857147 15.7801 5.01706 19.94 10.1486 19.94Z"
+                            fill="#3C6F75" stroke="white" stroke-width="1.71429" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M23.1429 23.6429L16.7143 17.2144" stroke="white" stroke-width="1.71429"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="booking-history.html" class="footer-link-icon-container History">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.0005 17H10C8.20553 17 6.65421 16.4095 5.32297 15.2212C4.13282 14.1588 3.40081 12.8681 3.11954 11.3333H3.82667C4.10085 12.7064 4.7775 13.8657 5.85017 14.7946C7.03266 15.8187 8.42338 16.3333 10 16.3333C11.7553 16.3333 13.2617 15.7164 14.4893 14.4895C15.717 13.2624 16.3339 11.7558 16.3333 9.99983C16.3327 8.24413 15.7159 6.73797 14.4894 5.51145C13.2629 4.28493 11.7565 3.66787 10.0003 3.66667H10C8.96086 3.66667 7.98406 3.9085 7.07721 4.39216C6.17618 4.8727 5.41778 5.5342 4.8049 6.3713L4.22258 7.16667H5.20833H7V7.83333H3V3.83333H3.66667V5.29167V6.72142L4.5577 5.60327C5.21895 4.77345 6.02356 4.13392 6.97575 3.68062C7.92927 3.22669 8.93552 3 10 3C10.9765 3 11.884 3.18526 12.7279 3.55262C13.583 3.92483 14.3219 4.42454 14.9491 5.0512C15.5761 5.67771 16.076 6.41643 16.4482 7.27196C16.8155 8.11645 17.0005 9.02394 17 9.99973C16.9995 10.9759 16.8144 11.8837 16.448 12.7285C16.077 13.5837 15.5773 14.3221 14.9494 14.9485C14.3208 15.5755 13.5817 16.0756 12.7275 16.4484C11.8851 16.8161 10.9779 17.001 10.0005 17ZM9.66667 6.33333H10.3333V9.66667V9.87377L10.4798 10.0202L12.7929 12.3333L12.3333 12.7929L9.66667 10.1262V6.33333Z"
+                            stroke="currentColor" />
+                    </svg>
+                    <p>History</p>
+                </a>
+                <a href="user-profile.html" class="footer-link-icon-container active">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.6667 17.5V15.8333C16.6667 14.9493 16.3155 14.1014 15.6904 13.4763C15.0652 12.8512 14.2174 12.5 13.3333 12.5H6.66668C5.78262 12.5 4.93478 12.8512 4.30965 13.4763C3.68453 14.1014 3.33334 14.9493 3.33334 15.8333V17.5"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.99999 9.16667C11.8409 9.16667 13.3333 7.67428 13.3333 5.83333C13.3333 3.99238 11.8409 2.5 9.99999 2.5C8.15904 2.5 6.66666 3.99238 6.66666 5.83333C6.66666 7.67428 8.15904 9.16667 9.99999 9.16667Z"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p>Profile</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="share-modal-container" id="share-modal-container">
+        <div class="close-share-content" id="close-share"></div>
+        <div class="share-modal-content " id="share-modal-content">
+            <div class="share-modal-title">
+                <div class="notification-title-content share-modal-title-content">
+                    <h2>Logout Confirmation</h2>
+                    <div class="close-share-modal-svg" id="close-share-modal">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L17 17M1 17L17 1" stroke="#828282" stroke-width="1.5" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="cancel-my-complaint-modal-content">
+                <div class="cancel-my-complaint-modal-text ">
+                    <h2>Are you sure you want to log out?</h2>
+                </div>
+                <div class="remember-account-tick-box">
+                    <!-- <div class="tick-box">
+                        <div class="tick-box-svg">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1770_2040)">
+                                    <rect width="20.0301" height="20.0301" rx="5.00752" fill="black" />
+                                    <path
+                                        d="M15.7991 5.76665C15.7248 5.69168 15.6363 5.63218 15.5388 5.59158C15.4414 5.55097 15.3368 5.53007 15.2313 5.53007C15.1257 5.53007 15.0211 5.55097 14.9237 5.59158C14.8262 5.63218 14.7377 5.69168 14.6634 5.76665L8.70479 11.7332L6.20137 9.22184C6.12418 9.14726 6.03304 9.08863 5.93318 9.04927C5.83332 9.00992 5.72669 8.99062 5.61937 8.99248C5.51205 8.99433 5.40615 9.01731 5.30771 9.06009C5.20927 9.10288 5.12022 9.16463 5.04565 9.24183C4.97107 9.31903 4.91244 9.41016 4.87308 9.51002C4.83373 9.60988 4.81443 9.71652 4.81628 9.82384C4.81814 9.93116 4.84112 10.0371 4.8839 10.1355C4.92669 10.2339 4.98844 10.323 5.06564 10.3976L8.13692 13.4688C8.21127 13.5438 8.29973 13.6033 8.3972 13.6439C8.49466 13.6845 8.5992 13.7054 8.70479 13.7054C8.81037 13.7054 8.91491 13.6845 9.01238 13.6439C9.10984 13.6033 9.1983 13.5438 9.27265 13.4688L15.7991 6.94237C15.8803 6.86748 15.9451 6.77658 15.9894 6.6754C16.0337 6.57422 16.0566 6.46497 16.0566 6.35451C16.0566 6.24406 16.0337 6.1348 15.9894 6.03362C15.9451 5.93244 15.8803 5.84154 15.7991 5.76665Z"
+                                        fill="white" />
+                                </g>
+                                <rect x="0.834586" y="0.834586" width="18.3609" height="18.3609" rx="4.17293"
+                                    stroke="black" stroke-width="1.66917" />
+                                <defs>
+                                    <clipPath id="clip0_1770_2040">
+                                        <rect width="20.0301" height="20.0301" rx="5.00752" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </div>
+                    </div> -->
+                    <input type="checkbox" class="custom-checkbox modal-checkbox">
+                    <div class="remember-account-tick-box-text">
+                        <h2>Remember my account</h2>
+                    </div>
+                </div>
+                <div class="cancel-my-complaint-modal-btn">
+                    <div class="cancel-confirm-btn" id="back-modal">
+                        <button>
+                            <h2>Cancel</h2>
+                        </button>
+                    </div>
+                    <div class="back-cancel-modal-btn logout-done-btn">
+                        <button onclick="window.location.href='intro.html'">
+                            <h2>Logout</h2>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="share-modal-container" id="filter-price-modal-container">
+        <div class="close-share-content" id="close-filter-price-modal"></div>
+        <div class="share-modal-content " id="filter-price-modal-content">
+            <div class="share-modal-title">
+                <div class="notification-title-content share-modal-title-content">
+                    <h2>Price Range</h2>
+                    <div class="close-share-modal-svg" id="close-filter-price-modal-svg">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L17 17M1 17L17 1" stroke="#828282" stroke-width="1.5" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="user-profile-filter-price-range-content">
+                <div class="all-stays-filter-modal-price user-profile-filter-modal-price">
+                    <div class="all-stays-filter-modal-top-content-text">
+                        <h2>Price</h2>
+                    </div>
+                    <div class="all-stays-filter-modal-price-top">
+                        <h2><span id="print-price-min-val"> ₹6,000 </span> - <span id="print-price-max-val"> ₹14,000</span> </h2>
+                        <h3>The best stays are ranged from ₹5000 and above.</h3>
+                    </div>
+                    <div class="price-filter-tooltip-container">
+                        <div class="price-filter-slider-track">
+                            <div class="price-filter-tooltip-box" id="tooltip-min">
+                                <div class="price-filter-tooltip-box-price-val" id="min-val">
+                                    ₹6000
+                                </div>
+                            </div>
+                            <div class="price-filter-tooltip-box" id="tooltip-max">
+                                <div class="price-filter-tooltip-box-price-val" id="max-val">
+                                    ₹16000
+                                </div>
+                            </div>
+                            <div class="price-filter-tooltip-slider-input">
+                                <input type="range" min="1000" max="25000" value="2000" step="100" class="price-filter-range-input" id="min-price-input">
+                                <input type="range" min="1000" max="25000" value="14000" step="100"  class="price-filter-range-input" id="max-price-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-modal-footer user-profile-filter-modal-footer">
+                    <div class="filter-modal-footer-show-result-btn filter-modal-footer-user-done" id="user-filter-done-btn">
+                        <button>
+                            Done
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
