@@ -1,9 +1,10 @@
-const API = 'http://localhost/meghani-homex/api/index.php';
+// const API = 'http://localhost/meghani-homex/api/index.php';
+const API = 'https://abhishekmahto.com/admin/API/';
 
-const IMG_URL = 'http://localhost/meghani-homex/upload/';
+// const IMG_URL = 'http://localhost/meghani-homex/upload/';
+const IMG_URL = 'https://abhishekmahto.com/upload/';
 
 const params = new URLSearchParams(window.location.search);
-
 
 
 //type-1 -< for loadhostels
